@@ -1,0 +1,13 @@
+pameter is:SQ:0.5RO80MU0BON1
+check corrected!!!
+total weight is:528
+total flow is:9705
+total addin is:222
+run info for LagGAserial:node:50edge304task:300capacity100
+pameter is:SQ:0.5RO80MU0BON1
+check corrected!!!
+total weight is:525
+total flow is:9586
+total addin is:212
+run info for GA parrel:node:50edge304task:300capacity100
+run info for GA serial:node:50edge304task:300capacity100

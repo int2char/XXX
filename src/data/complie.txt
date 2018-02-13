@@ -1,0 +1,341 @@
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+CplexM.cpp: In member function ‘std::pair<int, std::vector<std::pair<std::__cxx11::basic_string<char>, float> > > CplexM::solve()’:
+CplexM.cpp:142:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  writejsoniter(LAGPFILE,middata,string("Cplex_solve"));
+                                                      ^
+LagSerial.cpp: In member function ‘std::vector<std::pair<std::__cxx11::basic_string<char>, float> > LagSerial::dijkstraSerial(std::vector<service>&, std::ostream&)’:
+LagSerial.cpp:118:53: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  writejsoniter(LAGSFILE,middata,string("Lag_Serial"));
+                                                     ^
+LagSerial.cpp:128:51: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  writejsondata(DATAFILE,rdata,string("Lag_Serial"));
+                                                   ^
+In file included from LagSerial.cpp:17:0:
+../include/PathArrange.h: At global scope:
+../include/PathArrange.h:8:15: warning: inline function ‘float rearrange(Graph*, float*, float*, int*, float*, float*, int*, int*, int, int, double&, int&, int, int, std::vector<std::vector<int> >&, std::vector<std::vector<int> >&, int*, std::ostream&, std::vector<RouteMark>&, double)’ used but never defined
+ inline float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, float *pd, int *te, int *st, int num, int mum, double& bestadd, int&stillS, int wide, int len, vector<vector<int>>&StoreRoute, vector<vector<int>>&BestRoute, int* mask, ostream& Out, vector<RouteMark>& bestroutes, double totalflow);
+               ^
+main.cpp:193:15: warning: multi-character character constant [-Wmultichar]
+   line[len] = '/0';
+               ^
+In file included from main.cpp:6:0:
+../include/NewGA.h: In member function ‘std::vector<std::pair<std::__cxx11::basic_string<char>, float> > NewGA::GAsearch(std::vector<service>&, taskPath*, std::ofstream&)’:
+../include/NewGA.h:131:53: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    writejsoniter(GASFILE,middata,string("GA_Serial"));
+                                                     ^
+../include/NewGA.h:141:52: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    writejsondata(DATAFILE,rdata,string("GA_Serial"));
+                                                    ^
+main.cpp: In function ‘void WriteFile(Graph&, std::vector<service>&)’:
+main.cpp:101:27: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  WriteGraph(G, "Graph.txt");
+                           ^
+main.cpp: In function ‘char* readline(FILE*)’:
+main.cpp:193:13: warning: overflow in implicit constant conversion [-Woverflow]
+   line[len] = '/0';
+             ^
+main.cpp: In function ‘void Cplexsolve(Graph&, std::vector<service>&, std::ofstream&)’:
+main.cpp:452:60: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  writejsondata(DATAFILE,redata.second,string("Cplex_solve"));
+                                                            ^
+main.cpp: In function ‘void GetPath(Graph&, taskPath*)’:
+main.cpp:207:27: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+   fgets(line, 99999, data);
+                           ^
+main.cpp: In function ‘void Pathcheck(Graph&, std::vector<service>&)’:
+main.cpp:323:27: warning: ignoring return value of ‘char* fgets(char*, int, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+   fgets(line, 99999, data);
+                           ^
+GAparrel.cu(342): warning: conversion from a string literal to "char *" is deprecated
+
+GAparrel.cu(352): warning: conversion from a string literal to "char *" is deprecated
+
+
+Compilation terminated.
+nvcc error   : 'cudafe++' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 
+BFS.cpp:7:0: warning: "N" redefined
+ #define N 10000
+ ^
+In file included from BFS.cpp:3:0:
+../include/Heap.h:2:0: note: this is the location of the previous definition
+ #define N 100000
+ ^
+nvcc error   : 'gcc' died due to signal 2 

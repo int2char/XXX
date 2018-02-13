@@ -1,0 +1,7 @@
+{"type":"BA","node":"50","edge":"304","task":"300","capacity":"100","method":"GA_Paralle","type":"BA","iter":"1.01023e+06	"}
+{"type":"BA","node":"50","edge":"304","task":"300","capacity":"100","method":"GA_Paralle","type":"BA","iter":"1.00863e+06	"}
+{"type":"BA","node":"50","edge":"304","task":"300","capacity":"100","method":"GA_Paralle","type":"BA","iter":"980710	"}
+{"type":"BA","node":"50","edge":"304","task":"300","capacity":"100","method":"GA_Paralle","type":"BA","iter":"1.01492e+06	"}
+{"type":"BA","node":"50","edge":"304","task":"300","capacity":"100","method":"GA_Paralle","type":"BA","iter":"1.013e+06	"}
+{"type":"BA","node":"50","edge":"304","task":"300","capacity":"100","method":"GA_Paralle","type":"BA","iter":"1.00383e+06	"}
+{"type":"BA","node":"50","edge":"304","task":"300","capacity":"100","method":"GA_Paralle","type":"BA","iter":"1.02159e+06	"}
