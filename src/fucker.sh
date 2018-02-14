@@ -1,9 +1,9 @@
 #!/bin/bash
 rm -f *.txt
-nodes=(2000)
+nodes=(50)
 types=(2)
 graphtype=("BA")
-powers=(6)
+powers=(2)
 declare -i edge task biao
 for node in ${nodes[@]}
 do

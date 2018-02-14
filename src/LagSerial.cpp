@@ -92,19 +92,20 @@ vector<pair<string,float> > LagSerial::dijkstraSerial(vector<service> &s,ostream
 	vector<set<int> >stset(NODE,set<int>());
 	for(int i=0;i<num;i++)
 		stset[st[i]].insert(te[i]);
-	for (int i = 0; i < 1000000; i++)
+	for (int i = 0; i < 1; i++)
 	{
 		reme++;
 		for (int j = 0; j < NODE; j++)
 		{
 			if(!stset[j].empty())
-			int n=0;
+			{int size=0;
 			set<int>::iterator iter=stset[j].begin();
 			for(iter;iter!=stset[j].end();iter++)
-				n++;
+				size++;
 			int s = j;
 			set<int>t = stset[j];
-			dijkstra(&G, s, t,n, d + j * NODE, pre + j * NODE, lambda);
+			dijkstra(&G, s, t,size, d + j * NODE, pre + j * NODE, lambda);
+			}
 		}
 		int n = 0;
 		for(int i=0;i<NODE;i++)stset[i].clear();

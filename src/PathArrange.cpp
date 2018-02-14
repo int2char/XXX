@@ -52,7 +52,7 @@ bool cmpv(RouteMark a1, RouteMark a2){
 	return false;
 }
 
-float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, float *pd, int *te, int *st, int num, int mum, double& bestadd, int&stillS, int wide, int len, vector<vector<int>>&StoreRoute, vector<vector<int>>&BestRoute, ,vector<set<int> >&stpair, ostream& Out, vector<RouteMark>& bestroutes, double totalflow)
+float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, float *pd, int *te, int *st, int num, int mum, double& bestadd, int&stillS, int wide, int len, vector<vector<int>>&StoreRoute, vector<vector<int>>&BestRoute,vector<set<int> >&stpair, ostream& Out, vector<RouteMark>& bestroutes, double totalflow)
 {
 	totalflow=0;
 	vector<RouteMark> Routes;

@@ -4,6 +4,7 @@
 #include"routemask.h"
 #include<fstream>
 #include"service.h"
+#include<set>
 using namespace std;
 inline float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, float *pd, int *te, int *st, int num, int mum, double& bestadd, int&stillS, int wide, int len, vector<vector<int>>&StoreRoute, vector<vector<int>>&BestRoute,vector<set<int> >&stpair, ostream& Out, vector<RouteMark>& bestroutes, double totalflow);
 

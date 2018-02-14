@@ -25,12 +25,12 @@ void dijkstra(Graph *G, int s, set<int> t,int size,float d[],int peg[],float lam
 	do{
 		int cur = heap.pop();
 		flag[cur] = 1;
-		if (t.find(cur) != t.end())
+		/*if (t.find(cur) != t.end())
 			{
 				size--;
 				if(size==0)
 					break;
-			}
+			}*/
 		int size = G->near[cur].size();
 		for (int i = 0; i<size; i++){
 			int id = G->near[cur][i];	
