@@ -89,17 +89,26 @@ vector<pair<string,float> > LagSerial::dijkstraSerial(vector<service> &s,ostream
 	double bestadd = totalflow;
 	int totaliter = 0;
 	vector<float>middata;
+	vector<set<int> >stset(NODE,set<int>());
+	for(int i=0;i<num;i++)
+		stset[st[i]].insert(te[i]);
 	for (int i = 0; i < 1000000; i++)
 	{
 		reme++;
-		for (int j = 0; j < stillS; j++)
+		for (int j = 0; j < NODE; j++)
 		{
-			int s = st[mask[j]];
-			int t = te[mask[j]];
-			dijkstra(&G, s, t, d + mask[j] * NODE, pre + mask[j] * NODE, lambda);
+			if(!stset[j].empty())
+			int n=0;
+			set<int>::iterator iter=stset[j].begin();
+			for(iter;iter!=stset[j].end();iter++)
+				n++;
+			int s = j;
+			set<int>t = stset[j];
+			dijkstra(&G, s, t,n, d + j * NODE, pre + j * NODE, lambda);
 		}
 		int n = 0;
-		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, 1, NODE, StoreRoute, BestRoute, mask, Out, bestroutes, totalflow);
+		for(int i=0;i<NODE;i++)stset[i].clear();
+		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, 1, NODE, StoreRoute, BestRoute, stset, Out, bestroutes, totalflow);
 		if (value<best)
 		{
 			best = value;

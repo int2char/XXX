@@ -132,68 +132,7 @@ GraphPath::GraphPath(Graph&_G):G(_G),StoreRoute(Task, vector<int>(1,-1)), BestRo
 vector<pair<string,float> > GraphPath::bellmanFordCuda(vector<service>&ser,ostream& Out) {
 	printf("Lagrange parrel searching..............\n");
 	srand(time(NULL));
-	float start = float(1000*clock())/ CLOCKS_PER_SEC;
-	Copy2GPU(ser);
-	int num = Task;
-	int mum = EDge;
-	int stillS = num;
-	int reme = 0;
-	int count = 0;
-	vector<RouteMark> bestroutes;
-	devicesize += 2 * Task*sizeof(RouteMark);
-	int bestround = 0;
-	int zeor = 0;
-	double totalflow = 0;
-	for (int i = 0; i < Task; i++)
-		totalflow += INFHOPS *pd[i];
-	double bestadd = totalflow;
-	float best = totalflow;
-	vector<float>middata;
-	for (int i = 0; i <1000000; i++)
-	{
-		count++;
-		reme++;
-		dim3 blocksq(Task / threadsize + 1, NODE*Task / Task);
-		ChangePameterC << <blocksq, threadsize >> >(dev_p, dev_d, dev_st, Task, NODE);
-		cudaMemcpy(dev_lambda, lambda, EDge*sizeof(float), cudaMemcpyHostToDevice);
-		cudaMemcpy(dev_mask, mask, Task*sizeof(int), cudaMemcpyHostToDevice);
-		dim3 blocks_square(stillS / threadsize + 1, EDge*Task / Task);
-		do{
-			cudaMemcpy(dev_m, &zeor, sizeof(int), cudaMemcpyHostToDevice);
-			bellmanHigh << <blocks_square, threadsize >> >(dev_edge, dev_m, dev_d, dev_p, dev_lambda, dev_mask, stillS);
-			cudaMemcpy(mark, dev_m, sizeof(int), cudaMemcpyDeviceToHost);
-		} while (*mark);
-		color << <blocks_square, threadsize >> >(dev_edge, dev_m, dev_d, dev_p, dev_lambda, dev_mask, stillS);
-		cudaMemcpy(pre, dev_p, sizeof(int)*num*NODE, cudaMemcpyDeviceToHost);
-		cudaMemcpy(d, dev_d, sizeof(float)*num*NODE, cudaMemcpyDeviceToHost);
-		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, num, 1, StoreRoute, BestRoute, mask, Out, bestroutes, totalflow);
-		middata.push_back(value);
-		if (value<best)
-		{
-			bestround = count;
-			best = value;
-			reme = 0;
-		}
-		if (stillS == 0 || reme>loomore)
-			break;
-	}
-	float end=float(1000*clock())/ CLOCKS_PER_SEC;
-
-
-	vector<pair<int, vector<int>>> result = GrabResult(BestRoute, num, mum, pd);
-	int addin = result.size();
-	pair<float,int> tf=CheckR(&G, result,ser,string("Lag_Parallel"));
-	writejsoniter(LAGPFILE,middata,string("Lag_Parallel"));
 	vector<pair<string,float>> rdata;
-	rdata.push_back(make_pair(string("object"),best));
-	rdata.push_back(make_pair(string("inf_obj"),totalflow));
-	rdata.push_back(make_pair(string("task_add_in"),addin));
-	rdata.push_back(make_pair(string("flow_add_in"),tf.first));
-	rdata.push_back(make_pair(string("total_weight"),tf.second));
-	rdata.push_back(make_pair(string("time"),(end-start)));
-	rdata.push_back(make_pair(string("iter_num"),count));
-	rdata.push_back(make_pair(string("iter_time"),float(end-start)/(float)count));
-	writejsondata(DATAFILE,rdata,string("Lag_Parallel"));
 	return rdata;
 }
 void GraphPath::CudaFree(){

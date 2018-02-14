@@ -6,7 +6,7 @@
 #define INF 1000000000
 //#define N 1000000
 int flag[N];
-void dijkstra(Graph *G, int s, int t,float d[],int peg[],float lambda[]){
+void dijkstra(Graph *G, int s, set<int> t,int size,float d[],int peg[],float lambda[]){
 	int n_num = G->n;
 	for (int i = 0; i < n_num; i++)
 		if (i == s)
@@ -25,8 +25,12 @@ void dijkstra(Graph *G, int s, int t,float d[],int peg[],float lambda[]){
 	do{
 		int cur = heap.pop();
 		flag[cur] = 1;
-		if (cur == t)
-			break;
+		if (t.find(cur) != t.end())
+			{
+				size--;
+				if(size==0)
+					break;
+			}
 		int size = G->near[cur].size();
 		for (int i = 0; i<size; i++){
 			int id = G->near[cur][i];	

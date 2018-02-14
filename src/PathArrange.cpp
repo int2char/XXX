@@ -51,7 +51,8 @@ bool cmpv(RouteMark a1, RouteMark a2){
 		return true;
 	return false;
 }
-float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, float *pd, int *te, int *st, int num, int mum, double& bestadd, int&stillS, int wide, int len, vector<vector<int>>&StoreRoute, vector<vector<int>>&BestRoute, int* mask, ostream& Out, vector<RouteMark>& bestroutes, double totalflow)
+
+float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, float *pd, int *te, int *st, int num, int mum, double& bestadd, int&stillS, int wide, int len, vector<vector<int>>&StoreRoute, vector<vector<int>>&BestRoute, ,vector<set<int> >&stpair, ostream& Out, vector<RouteMark>& bestroutes, double totalflow)
 {
 	totalflow=0;
 	vector<RouteMark> Routes;
@@ -240,13 +241,16 @@ float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 	for (int i = 0; i < num; i++)
 	{
 		if (StoreRoute[i][0] < 0)
-			mask[maskC++] = i;
+			{maskC++  ;
+			stpair[st[i]].insert(te[i]);
+			}
 		else
 		{
 			int random = rand() % 10;
 			if (random < MU)
 			{
-				mask[maskC++] = i;
+				stpair[st[i]].insert(te[i]);
+				maskC++;
 				StoreRoute[i].clear();
 				StoreRoute[i].push_back(-1);
 			}
