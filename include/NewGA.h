@@ -408,7 +408,7 @@ class NewGA
 			int stillremain=0;
 			for (int i = 0; i < remain.size(); i++)
 			{
-				BFS(&G, st[remain[i]], te[remain[i]], distan, pedge, demand[remain[i]],capacity);
+				BFS(&G, st[remain[i]], te[remain[i]], distan, pedge, demand[remain[i]],capacity,100000);
 				int f = pedge[te[remain[i]]];
 				if (distan[te[remain[i]]]<INFHOPS)
 				{

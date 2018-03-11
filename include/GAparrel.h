@@ -305,7 +305,7 @@ private:
 				int stillremain=0;
 				for (int i = 0; i < remain.size(); i++)
 				{
-					BFS(&G, st[remain[i]], te[remain[i]], distca, caped, demand[remain[i]],capacity);
+					BFS(&G, st[remain[i]], te[remain[i]], distca, caped, demand[remain[i]],capacity,100000);
 					int f = caped[te[remain[i]]];
 					if (distca[te[remain[i]]]<INFHOPS)
 					{
