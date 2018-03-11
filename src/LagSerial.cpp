@@ -114,7 +114,7 @@ vector<pair<string,float> > LagSerial::dijkstraSerial(vector<service> &s,ostream
 				dijkstra(&G, s, t,size, d + j * NODE, pre + j * NODE, lambda);
 			}
 		}
-		cout<<float(ss)/float(gugu)<<endl;
+		//cout<<float(ss)/float(gugu)<<endl;
 		int n = 0;
 		for(int i=0;i<NODE;i++)stset[i].clear();
 		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, 1, NODE, StoreRoute, BestRoute,TmpRoute,stset, Out, bestroutes, totalflow);
