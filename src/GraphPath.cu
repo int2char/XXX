@@ -159,14 +159,22 @@ vector<pair<string,float> > GraphPath::bellmanFordCuda(vector<service>&ser,ostre
 	float best = totalflow;
 	vector<float>middata;
 	vector<vector<int>>TmpRoute(Task, vector<int>(1,-1));
-	for (int i = 0; i <100000000; i++)
+	vector<set<int> >stset(NODE,set<int>());
+	for(int i=0;i<num;i++)
+		stset[st[i]].insert(te[i]);
+	for (int i = 0; i <10000000; i++)
 	{
+		float ss=float(1000*clock())/ CLOCKS_PER_SEC;
 		count++;
 		reme++;
-		dim3 blocksq(Task / threadsize + 1, NODE*Task / Task);
+		stillS=0;
+		for(int k=0;k<NODE;k++)
+			if(!stset[k].empty())
+				mask[stillS++]=k;
+		dim3 blocksq(stillS/threadsize + 1, NODE*stillS/stillS);
 		ChangePameterC << <blocksq, threadsize >> >(dev_p, dev_d, dev_st);
 		cudaMemcpy(dev_lambda, lambda, EDge*sizeof(float), cudaMemcpyHostToDevice);
-		cudaMemcpy(dev_mask, mask, Task*sizeof(int), cudaMemcpyHostToDevice);
+		cudaMemcpy(dev_mask, mask, stillS*sizeof(int), cudaMemcpyHostToDevice);
 		dim3 blocks_square(stillS / threadsize + 1, EDge*stillS /stillS);
 		do{
 			cudaMemcpy(dev_m, &zeor, sizeof(int), cudaMemcpyHostToDevice);
@@ -176,7 +184,11 @@ vector<pair<string,float> > GraphPath::bellmanFordCuda(vector<service>&ser,ostre
 		color << <blocks_square, threadsize >> >(dev_edge, dev_m, dev_d, dev_p, dev_lambda, dev_mask, stillS);
 		cudaMemcpy(pre, dev_p, sizeof(int)*NODE*NODE, cudaMemcpyDeviceToHost);
 		cudaMemcpy(d, dev_d, sizeof(float)*NODE*NODE, cudaMemcpyDeviceToHost);
-		int value = rearrange2(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, NODE, 1, StoreRoute, BestRoute,TmpRoute,mask, Out, bestroutes,totalflow);
+		float ee=float(1000*clock())/ CLOCKS_PER_SEC;
+		cout<<"gpu time is "<<ee-ss<<endl;
+		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, NODE, 1, StoreRoute, BestRoute,TmpRoute,stset,Out, bestroutes,totalflow);
+		float eee=float(1000*clock())/ CLOCKS_PER_SEC;
+		cout<<"rearrange time is "<<eee-ee<<endl;
 		middata.push_back(value);
 		if (value<best)
 		{

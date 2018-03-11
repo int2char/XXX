@@ -63,7 +63,6 @@ float rearrange2(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 	{
 		int n = 0;			
 		int f = pre[te[i] * wide + st[i]*len];
-		//if(f<0)cout<<"erro !!!!"<<endl;
 		if (StoreRoute[i][0] < 0)
 		{
 			while (f >= 0){
@@ -79,7 +78,6 @@ float rearrange2(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 		Routes.push_back(RouteMark(value, i));
 	}
 	sort(Routes.begin(), Routes.end(), cmpv);
-	//cout<<"after sort !!!"<<endl;
 	for (int ai = 0; ai <Routes.size(); ai++)
 	{
 		int i = Routes[ai].mark;
@@ -168,7 +166,6 @@ float rearrange2(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 			}
 		}
 	}
-	//cout<<"?????"<<endl;
 	stillS = remain.size();
 	vector<int> stillremain;
 	vector<int>vecmask;
@@ -286,9 +283,7 @@ float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 	vector<RouteMark> Routes;
 	vector<vector<int>>haslink(mum,vector<int>());
 	for (int i = 0; i < mum; i++)
-	{
 		capacity[i] = G->incL[i].capacity;
-	}
 	vector<int> remain;
 	for (int i = 0; i < num; i++)
 	{
@@ -300,7 +295,10 @@ float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 				n++;
 				f = pre[G->incL[f].tail*wide + st[i]*len];
 				if (n>1000)
+				{
+					cout<<"cyclei sa"<<endl;
 					cout << "circle"<<i<< endl;
+				}
 			}
 		}
 		else
@@ -508,9 +506,7 @@ float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 			}
 		}
 	}
-
 	stillS = maskC;
-	//cout<<"maskC is "<<maskC<<endl;
 	return tflow;
 }
 /*float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, float *pd, int *te, int *st, int num, int mum, double& bestadd, int&stillS, int wide, int len, vector<vector<int>>&StoreRoute, vector<vector<int>>&BestRoute,vector<vector<int>>&TmpRoute,vector<set<int> >&stpair, ostream& Out, vector<RouteMark>& bestroutes, double totalflow)
