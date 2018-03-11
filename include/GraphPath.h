@@ -39,6 +39,7 @@ private:
 	float *lambda;
 	int* mask;
 	int*mark;
+	int stillS;
 	vector<vector<int> > StoreRoute;
 	vector<vector<int> > BestRoute;
 	float*capacity;

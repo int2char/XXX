@@ -1,0 +1,11 @@
+*** Error in `./a.out': double free or corruption (out): 0x00000000021d17b0 ***
+*** Error in `./a.out': double free or corruption (out): 0x0000000002fb43b0 ***
+*** Error in `./a.out': double free or corruption (out): 0x00000000023782c0 ***
+grab.sh: line 22: ./a.out: No such file or directory
+grab.sh: line 22: ./a.out: No such file or directory
+grab.sh: line 22: ./a.out: No such file or directory
+grab.sh: line 22: ./a.out: No such file or directory
+grab.sh: line 22: ./a.out: No such file or directory
+grab.sh: line 22: ./a.out: No such file or directory
+grab.sh: line 22: ./a.out: No such file or directory
+grab.sh: line 22: ./a.out: No such file or directory

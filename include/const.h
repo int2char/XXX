@@ -31,23 +31,20 @@ graph dependent*/
 		#define EXPIRE 600000
 	#endif
 	#define PERB ((Task>EDge)?Task:EDge)
-	#define INFHOPS 10
+	#define INFHOPS 50
 	#define Deep 300
 	#define loop 30
 	#define loomore 30
 	#define FROM 0
 	#define STATMAX 100*pop
-
 	#define LAGPFILE "./data/iteration.txt"
 	#define LAGSFILE "./data/iteration.txt"
 	#define GAPFILE "./data/iteration.txt"
 	#define GASFILE "./data/iteration.txt"
-
 	#define ANSWERS "./data/answers.txt"
     #define TOPFILE "Graph.txt"
 	#define ROUTFILE "data.txt"
 	#define FLOWFILE "service.txt"
-
 	#define INFOFILE "./data/info.txt"
 	#define DATAFILE "./data/all_data.txt"
 	#define FLOWVARRY "./data/flow_varry.txt"

@@ -1,0 +1,24 @@
+../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:607696
+service size12000
+graph size:11980
+node:2000
+task:12000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:250
+GA Parallel searching.......
+219927
+check over!!tof: 219927
+before more3.666e+06
+10558 10558
+after totalv3.32739e+06gap is338618
+in check
+check corrected!!!
+GA Serial searching.......
+run info for GA serial:node:2000edge11980task:12000capacity250
+10523 10523
+in check
+check corrected!!!
+here

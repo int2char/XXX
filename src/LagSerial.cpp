@@ -59,6 +59,7 @@ LagSerial::LagSerial(Graph &_G):G(_G),StoreRoute(Task, vector<int>(1, -1)), Best
 vector<pair<string,float> > LagSerial::dijkstraSerial(vector<service> &s,ostream& Out){
 	printf("Lagrange serial searching..............\n");
 	srand(time(NULL));
+	//srand(1);
 	float start = float(1000*clock()) / CLOCKS_PER_SEC;
 	for (int i = 0; i < Task; i++)
 	{
@@ -92,24 +93,31 @@ vector<pair<string,float> > LagSerial::dijkstraSerial(vector<service> &s,ostream
 	vector<set<int> >stset(NODE,set<int>());
 	for(int i=0;i<num;i++)
 		stset[st[i]].insert(te[i]);
-	for (int i = 0; i < 1; i++)
+	vector<vector<int>>TmpRoute(Task, vector<int>(1,-1));
+	for (int i = 0; i < 100000000; i++)
 	{
 		reme++;
+		int gugu=0;
+		int ss=0;
 		for (int j = 0; j < NODE; j++)
 		{
 			if(!stset[j].empty())
-			{int size=0;
-			set<int>::iterator iter=stset[j].begin();
-			for(iter;iter!=stset[j].end();iter++)
-				size++;
-			int s = j;
-			set<int>t = stset[j];
-			dijkstra(&G, s, t,size, d + j * NODE, pre + j * NODE, lambda);
+			{
+				gugu++;
+				int size=0;
+				set<int>::iterator iter=stset[j].begin();
+				for(iter;iter!=stset[j].end();iter++)
+					size++;
+				ss+=size;
+				int s = j;
+				set<int>t = stset[j];
+				dijkstra(&G, s, t,size, d + j * NODE, pre + j * NODE, lambda);
 			}
 		}
+		cout<<float(ss)/float(gugu)<<endl;
 		int n = 0;
 		for(int i=0;i<NODE;i++)stset[i].clear();
-		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, 1, NODE, StoreRoute, BestRoute, stset, Out, bestroutes, totalflow);
+		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, 1, NODE, StoreRoute, BestRoute,TmpRoute,stset, Out, bestroutes, totalflow);
 		if (value<best)
 		{
 			best = value;
@@ -131,7 +139,7 @@ vector<pair<string,float> > LagSerial::dijkstraSerial(vector<service> &s,ostream
 	rdata.push_back(make_pair(string("inf_obj"),totalflow));
 	rdata.push_back(make_pair(string("task_add_in"),addin));
 	rdata.push_back(make_pair(string("flow_add_in"),tf.first));
-		rdata.push_back(make_pair(string("total_weight"),tf.second));
+	rdata.push_back(make_pair(string("total_weight"),tf.second));
 	rdata.push_back(make_pair(string("time"),(end-start)));
 	rdata.push_back(make_pair(string("iter_num"),totaliter));
 	rdata.push_back(make_pair(string("iter_time"),(float)(end-start)/(float)totaliter));

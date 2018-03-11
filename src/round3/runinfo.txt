@@ -1,0 +1,735 @@
+../result/50/0/
+ssadsa../result/50/0/service.txttotal demand:2581
+service size50
+graph size:304
+node:50
+task:50
+edge:304
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/50/0/
+ssadsa../result/50/0/service.txttotal demand:5284
+service size100
+graph size:304
+node:50
+task:100
+edge:304
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/50/0/
+ssadsa../result/50/0/service.txttotal demand:7796
+service size150
+graph size:304
+node:50
+task:150
+edge:304
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/50/0/
+ssadsa../result/50/0/service.txttotal demand:10162
+service size200
+graph size:304
+node:50
+task:200
+edge:304
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/50/0/
+ssadsa../result/50/0/service.txt../result/50/2/
+ssadsa../result/50/2/service.txttotal demand:2581
+service size50
+graph size:280
+node:50
+task:50
+edge:280
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/50/2/
+ssadsa../result/50/2/service.txttotal demand:5284
+service size100
+graph size:280
+node:50
+task:100
+edge:280
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/50/2/
+ssadsa../result/50/2/service.txttotal demand:7796
+service size150
+graph size:280
+node:50
+task:150
+edge:280
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/50/2/
+ssadsa../result/50/2/service.txttotal demand:10162
+service size200
+graph size:280
+node:50
+task:200
+edge:280
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/50/2/
+../result/100/0/
+ssadsa../result/100/0/service.txttotal demand:5284
+service size100
+graph size:566
+node:100
+task:100
+edge:566
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/100/0/
+ssadsa../result/100/0/service.txttotal demand:10162
+service size200
+graph size:566
+node:100
+task:200
+edge:566
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/100/0/
+ssadsa../result/100/0/service.txttotal demand:15187
+service size300
+graph size:566
+node:100
+task:300
+edge:566
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/100/0/
+ssadsa../result/100/0/service.txttotal demand:20109
+service size400
+graph size:566
+node:100
+task:400
+edge:566
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/100/0/
+ssadsa../result/100/0/service.txt../result/100/2/
+ssadsa../result/100/2/service.txttotal demand:5284
+service size100
+graph size:580
+node:100
+task:100
+edge:580
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/100/2/
+ssadsa../result/100/2/service.txttotal demand:10162
+service size200
+graph size:580
+node:100
+task:200
+edge:580
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/100/2/
+ssadsa../result/100/2/service.txttotal demand:15187
+service size300
+graph size:580
+node:100
+task:300
+edge:580
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/100/2/
+ssadsa../result/100/2/service.txttotal demand:20109
+service size400
+graph size:580
+node:100
+task:400
+edge:580
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/100/2/
+../result/200/0/
+ssadsa../result/200/0/service.txttotal demand:10162
+service size200
+graph size:1150
+node:200
+task:200
+edge:1150
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/200/0/
+ssadsa../result/200/0/service.txttotal demand:20109
+service size400
+graph size:1150
+node:200
+task:400
+edge:1150
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/200/0/
+ssadsa../result/200/0/service.txttotal demand:30371
+service size600
+graph size:1150
+node:200
+task:600
+edge:1150
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/200/0/
+ssadsa../result/200/0/service.txttotal demand:40707
+service size800
+graph size:1150
+node:200
+task:800
+edge:1150
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/200/0/
+ssadsa../result/200/0/service.txt../result/200/2/
+ssadsa../result/200/2/service.txttotal demand:10162
+service size200
+graph size:1180
+node:200
+task:200
+edge:1180
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/200/2/
+ssadsa../result/200/2/service.txttotal demand:20109
+service size400
+graph size:1180
+node:200
+task:400
+edge:1180
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/200/2/
+ssadsa../result/200/2/service.txttotal demand:30371
+service size600
+graph size:1180
+node:200
+task:600
+edge:1180
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/200/2/
+ssadsa../result/200/2/service.txttotal demand:40707
+service size800
+graph size:1180
+node:200
+task:800
+edge:1180
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/200/2/
+../result/300/0/
+ssadsa../result/300/0/service.txttotal demand:15187
+service size300
+graph size:1816
+node:300
+task:300
+edge:1816
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/300/0/
+ssadsa../result/300/0/service.txttotal demand:30371
+service size600
+graph size:1816
+node:300
+task:600
+edge:1816
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/300/0/
+ssadsa../result/300/0/service.txttotal demand:45813
+service size900
+graph size:1816
+node:300
+task:900
+edge:1816
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/300/0/
+ssadsa../result/300/0/service.txttotal demand:61835
+service size1200
+graph size:1816
+node:300
+task:1200
+edge:1816
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/300/2/
+ssadsa../result/300/2/service.txttotal demand:15187
+service size300
+graph size:1780
+node:300
+task:300
+edge:1780
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/300/2/
+ssadsa../result/300/2/service.txttotal demand:30371
+service size600
+graph size:1780
+node:300
+task:600
+edge:1780
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/300/2/
+ssadsa../result/300/2/service.txttotal demand:45813
+service size900
+graph size:1780
+node:300
+task:900
+edge:1780
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/300/2/
+ssadsa../result/300/2/service.txttotal demand:61835
+service size1200
+graph size:1780
+node:300
+task:1200
+edge:1780
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/500/0/
+ssadsa../result/500/0/service.txttotal demand:25226
+service size500
+graph size:2942
+node:500
+task:500
+edge:2942
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/500/0/
+ssadsa../result/500/0/service.txttotal demand:51295
+service size1000
+graph size:2942
+node:500
+task:1000
+edge:2942
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/500/0/
+ssadsa../result/500/0/service.txttotal demand:77218
+service size1500
+graph size:2942
+node:500
+task:1500
+edge:2942
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/500/0/
+ssadsa../result/500/0/service.txttotal demand:102268
+service size2000
+graph size:2942
+node:500
+task:2000
+edge:2942
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/500/2/
+ssadsa../result/500/2/service.txttotal demand:25226
+service size500
+graph size:2980
+node:500
+task:500
+edge:2980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/500/2/
+ssadsa../result/500/2/service.txttotal demand:51295
+service size1000
+graph size:2980
+node:500
+task:1000
+edge:2980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/500/2/
+ssadsa../result/500/2/service.txttotal demand:77218
+service size1500
+graph size:2980
+node:500
+task:1500
+edge:2980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/500/2/
+ssadsa../result/500/2/service.txttotal demand:102268
+service size2000
+graph size:2980
+node:500
+task:2000
+edge:2980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/1000/0/
+ssadsa../result/1000/0/service.txttotal demand:51295
+service size1000
+graph size:6032
+node:1000
+task:1000
+edge:6032
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/1000/0/
+ssadsa../result/1000/0/service.txttotal demand:102268
+service size2000
+graph size:6032
+node:1000
+task:2000
+edge:6032
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/1000/0/
+ssadsa../result/1000/0/service.txttotal demand:152246
+service size3000
+graph size:6032
+node:1000
+task:3000
+edge:6032
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/1000/0/
+ssadsa../result/1000/0/service.txttotal demand:203266
+service size4000
+graph size:6032
+node:1000
+task:4000
+edge:6032
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:51295
+service size1000
+graph size:5980
+node:1000
+task:1000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:102268
+service size2000
+graph size:5980
+node:1000
+task:2000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:152246
+service size3000
+graph size:5980
+node:1000
+task:3000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:203266
+service size4000
+graph size:5980
+node:1000
+task:4000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/2000/0/
+ssadsa../result/2000/0/service.txttotal demand:102268
+service size2000
+graph size:11838
+node:2000
+task:2000
+edge:11838
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/2000/0/
+ssadsa../result/2000/0/service.txttotal demand:203266
+service size4000
+graph size:11838
+node:2000
+task:4000
+edge:11838
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/2000/0/
+ssadsa../result/2000/0/service.txttotal demand:306188
+service size6000
+graph size:11838
+node:2000
+task:6000
+edge:11838
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/2000/0/
+ssadsa../result/2000/0/service.txttotal demand:407085
+service size8000
+graph size:11838
+node:2000
+task:8000
+edge:11838
+type:ER
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:102268
+service size2000
+graph size:11980
+node:2000
+task:2000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:203266
+service size4000
+graph size:11980
+node:2000
+task:4000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:306188
+service size6000
+graph size:11980
+node:2000
+task:6000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+569 2494 -1 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 in check
+check corrected!!!
+herehere../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:407085
+service size8000
+graph size:11980
+node:2000
+task:8000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:100
+Lagrange serial searching..............
+569 2494 -1 573 569 569 7474 7474 7474 8626 8626 8626 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 569 in check
+check corrected!!!
+herehere

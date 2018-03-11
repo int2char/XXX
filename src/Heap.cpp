@@ -49,7 +49,7 @@ int Heap::pop(){
 	return ret;
 }
 int Heap::empty(){
-	if (nodeNum <= 0)
+	if (nodeNum<=0)
 		return 1;
 	else
 		return 0;

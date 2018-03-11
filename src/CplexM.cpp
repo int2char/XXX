@@ -60,12 +60,11 @@ CplexM::CplexM(vector<service>&ser, taskPath*_PathSets, Graph &G, ofstream&_Out)
 	lowbound=0;
 	for(int i=0;i<Task;i++)
 		lowbound+=INFHOPS*demand[i];
-	//cout<<"LOW Bound is"<<lowbound<<endl;
+	cout<<"LOW Bound is"<<lowbound<<endl;
 
 };
 
 pair<int,vector<pair<string,float>>> CplexM::solve(){
-	//float sss=float(1000*clock())/ CLOCKS_PER_SEC;
 	IloEnv env;
         IloModel model(env);
 	IloNumVarArray x(env);
@@ -141,6 +140,8 @@ pair<int,vector<pair<string,float>>> CplexM::solve(){
 	//writejsondanswer(answers,string("Cplex_solve"));
 	writejsoniter(LAGPFILE,middata,string("Cplex_solve"));
 	vector<pair<string,float>> rdata;
+	cout<<"object is: "<<objv+lowbound<<endl;
+	cout<<"bound is: "<<bound+lowbound<<endl;
 	rdata.push_back(make_pair(string("object"),objv+lowbound));
 	rdata.push_back(make_pair(string("inf_obj"),lowbound));
 	rdata.push_back(make_pair(string("bound"),bound+lowbound));

@@ -1,10 +1,10 @@
 #!/bin/bash
 rm -f ./data/*.txt
-nodes=(50 2000)
-types=(0 2)
+nodes=(1000)
+types=(2)
 graphtype=("ER" "NI" "BA")
-powers=(1 2 3 4 5 6)
-capacitys=(150 200 250)
+powers=(6) 
+capacitys=(250)
 declare -i edge task biao 
 for node in ${nodes[@]}
 do
@@ -18,8 +18,8 @@ do
       task=$[$power*$node]
       biao=$type
       rm -f *.out
-      nvcc -O3 -std=c++11 *.cpp *.cu --gpu-architecture=compute_35 --gpu-code=sm_35 -I ../include -I ../cplex_include -L ../lib -lconcert -lcplex -lilocplex -lm -lpthread -DIL_STD -DNODE=$node -DEDge=$edge -DTask=$task -DTYPE="\"${graphtype[$biao]}\"" -DINPUTFILE=\"$path\" -DGANOEX=1 2>>./data/complie.txt
-     CUDA_VISIBLE_DEVICES=1 ./a.out S 1>>./data/runinfo.txt 2>>./data/err.txt
+      #nvcc -O3 -std=c++11 *.cpp *.cu --gpu-architecture=compute_35 --gpu-code=sm_35 -I ../include -I ../cplex_include -L ../lib -lconcert -lcplex -lilocplex -lm -lpthread -DIL_STD -DNODE=$node -DEDge=$edge -DTask=$task -DTYPE="\"${graphtype[$biao]}\"" -DINPUTFILE=\"$path\" -DGANOEX=1 2>>./data/complie.txt
+     #CUDA_VISIBLE_DEVICES=1 ./a.out S 1>>./data/runinfo.txt 2>>./data/err.txt
        if [[ $power -eq 6 ]];then
 	for capacity in ${capacitys[@]}
 	 do

@@ -1,0 +1,48 @@
+run info for GA serial:node:2000edge11980task:2000capacity100
+run info for GA serial:node:2000edge11980task:4000capacity100
+run info for GA serial:node:2000edge11980task:6000capacity100
+run info for GA serial:node:2000edge11980task:8000capacity100
+run info for GA serial:node:2000edge11980task:10000capacity100
+run info for GA serial:node:2000edge11980task:12000capacity100
+../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:607696
+service size12000
+graph size:11980
+node:2000
+task:12000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:150
+GA Parallel searching.......
+139819
+check over!!tof: 139819
+before more4.62312e+06
+7489 7489
+after totalv4.46398e+06gap is159138
+in check
+check corrected!!!
+GA Serial searching.......
+run info for GA serial:node:2000edge11980task:12000capacity150
+7495 7495
+in check
+check corrected!!!
+here../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:607696
+service size12000
+graph size:11980
+node:2000
+task:12000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:200
+GA Parallel searching.......
+182851
+check over!!tof: 182851
+before more4.13452e+06
+8786 8786
+after totalv3.91583e+06gap is218687
+in check
+check corrected!!!
+GA Serial searching.......

@@ -1,0 +1,133 @@
+../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:102268
+service size2000
+graph size:11980
+node:2000
+task:2000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+41681
+check over!!tof: 41681
+before more564563
+1977 1977
+after totalv456586gap is107977
+in check
+check corrected!!!
+GA Serial searching.......
+1975 1975
+in check
+check corrected!!!
+here../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:203266
+service size4000
+graph size:11980
+node:2000
+task:4000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+59523
+check over!!tof: 59523
+before more1.38484e+06
+3258 3258
+after totalv1.25463e+06gap is130212
+in check
+check corrected!!!
+GA Serial searching.......
+3253 3253
+in check
+check corrected!!!
+here../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:306188
+service size6000
+graph size:11980
+node:2000
+task:6000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+71471
+check over!!tof: 71471
+before more2.30238e+06
+3861 3861
+after totalv2.19032e+06gap is112055
+in check
+check corrected!!!
+GA Serial searching.......
+3886 3886
+in check
+check corrected!!!
+here../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:407085
+service size8000
+graph size:11980
+node:2000
+task:8000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+80300
+check over!!tof: 80300
+before more3.21766e+06
+4415 4415
+after totalv3.10946e+06gap is108201
+in check
+check corrected!!!
+GA Serial searching.......
+4410 4410
+in check
+check corrected!!!
+here../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:507511
+service size10000
+graph size:11980
+node:2000
+task:10000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+87644
+check over!!tof: 87644
+before more4.16451e+06
+4852 4852
+after totalv4.05505e+06gap is109462
+in check
+check corrected!!!
+GA Serial searching.......
+4848 4848
+in check
+check corrected!!!
+here../result/2000/2/
+ssadsa../result/2000/2/service.txttotal demand:607696
+service size12000
+graph size:11980
+node:2000
+task:12000
+edge:11980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+94319
+check over!!tof: 94319
+before more5.11751e+06
+5203 5203
+after totalv5.00948e+06gap is108030
+in check
+check corrected!!!
+GA Serial searching.......
+5233 5233
+in check
+check corrected!!!
+here

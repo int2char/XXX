@@ -1,0 +1,14 @@
+../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:306188
+service size6000
+graph size:5980
+node:1000
+task:6000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:250
+Lagrange serial searching..............
+in check
+check corrected!!!
+herehere

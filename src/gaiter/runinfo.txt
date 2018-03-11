@@ -1,0 +1,1981 @@
+../result/50/0/
+ssadsa../result/50/0/service.txttotal demand:2581
+service size50
+graph size:304
+node:50
+task:50
+edge:304
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+2273
+check over!!tof: 2273
+before more6793
+48 48
+after totalv6793gap is0
+in check
+check corrected!!!
+GA Serial searching.......
+48 48
+in check
+check corrected!!!
+here../result/50/0/
+ssadsa../result/50/0/service.txttotal demand:5284
+service size100
+graph size:304
+node:50
+task:100
+edge:304
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+3405
+check over!!tof: 3405
+before more16650
+92 92
+after totalv16174gap is476
+in check
+check corrected!!!
+GA Serial searching.......
+94 94
+in check
+check corrected!!!
+here../result/50/0/
+ssadsa../result/50/0/service.txttotal demand:7796
+service size150
+graph size:304
+node:50
+task:150
+edge:304
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+4129
+check over!!tof: 4129
+before more31985
+128 128
+after totalv30296gap is1689
+in check
+check corrected!!!
+GA Serial searching.......
+132 132
+in check
+check corrected!!!
+here../result/50/0/
+ssadsa../result/50/0/service.txttotal demand:10162
+service size200
+graph size:304
+node:50
+task:200
+edge:304
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+4676
+check over!!tof: 4676
+before more50460
+158 158
+after totalv48503gap is1957
+in check
+check corrected!!!
+GA Serial searching.......
+155 155
+in check
+check corrected!!!
+here../result/50/0/
+ssadsa../result/50/0/service.txttotal demand:12524
+service size250
+graph size:304
+node:50
+task:250
+edge:304
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+5275
+check over!!tof: 5275
+before more69440
+179 179
+after totalv67205gap is2235
+in check
+check corrected!!!
+GA Serial searching.......
+174 174
+in check
+check corrected!!!
+here../result/50/0/
+ssadsa../result/50/0/service.txttotal demand:15187
+service size300
+graph size:304
+node:50
+task:300
+edge:304
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+5631
+check over!!tof: 5631
+before more91476
+196 196
+after totalv89713gap is1763
+in check
+check corrected!!!
+GA Serial searching.......
+188 188
+in check
+check corrected!!!
+here../result/50/2/
+ssadsa../result/50/2/service.txttotal demand:2581
+service size50
+graph size:280
+node:50
+task:50
+edge:280
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+2189
+check over!!tof: 2189
+before more6244
+50 50
+after totalv6244gap is0
+in check
+check corrected!!!
+GA Serial searching.......
+50 50
+in check
+check corrected!!!
+here../result/50/2/
+ssadsa../result/50/2/service.txttotal demand:5284
+service size100
+graph size:280
+node:50
+task:100
+edge:280
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+3245
+check over!!tof: 3245
+before more18105
+96 96
+after totalv16612gap is1493
+in check
+check corrected!!!
+GA Serial searching.......
+96 96
+in check
+check corrected!!!
+here../result/50/2/
+ssadsa../result/50/2/service.txttotal demand:7796
+service size150
+graph size:280
+node:50
+task:150
+edge:280
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+3813
+check over!!tof: 3813
+before more35900
+123 123
+after totalv34386gap is1514
+in check
+check corrected!!!
+GA Serial searching.......
+127 127
+in check
+check corrected!!!
+here../result/50/2/
+ssadsa../result/50/2/service.txttotal demand:10162
+service size200
+graph size:280
+node:50
+task:200
+edge:280
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+4310
+check over!!tof: 4310
+before more53747
+148 148
+after totalv51934gap is1813
+in check
+check corrected!!!
+GA Serial searching.......
+141 141
+in check
+check corrected!!!
+here../result/50/2/
+ssadsa../result/50/2/service.txttotal demand:12524
+service size250
+graph size:280
+node:50
+task:250
+edge:280
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+4714
+check over!!tof: 4714
+before more72319
+166 166
+after totalv70195gap is2124
+in check
+check corrected!!!
+GA Serial searching.......
+160 160
+in check
+check corrected!!!
+here../result/50/2/
+ssadsa../result/50/2/service.txttotal demand:15187
+service size300
+graph size:280
+node:50
+task:300
+edge:280
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+4973
+check over!!tof: 4973
+before more99015
+171 171
+after totalv96535gap is2480
+in check
+check corrected!!!
+GA Serial searching.......
+169 169
+in check
+check corrected!!!
+here../result/100/0/
+ssadsa../result/100/0/service.txttotal demand:5284
+service size100
+graph size:566
+node:100
+task:100
+edge:566
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+3742
+check over!!tof: 3742
+before more18840
+94 94
+after totalv18840gap is0
+in check
+check corrected!!!
+GA Serial searching.......
+97 97
+in check
+check corrected!!!
+here../result/100/0/
+ssadsa../result/100/0/service.txttotal demand:10162
+service size200
+graph size:566
+node:100
+task:200
+edge:566
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+5506
+check over!!tof: 5506
+before more45860
+179 179
+after totalv44148gap is1712
+in check
+check corrected!!!
+GA Serial searching.......
+178 178
+in check
+check corrected!!!
+here../result/100/0/
+ssadsa../result/100/0/service.txttotal demand:15187
+service size300
+graph size:566
+node:100
+task:300
+edge:566
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+6665
+check over!!tof: 6665
+before more84631
+235 235
+after totalv82504gap is2127
+in check
+check corrected!!!
+GA Serial searching.......
+233 233
+in check
+check corrected!!!
+here../result/100/0/
+ssadsa../result/100/0/service.txttotal demand:20109
+service size400
+graph size:566
+node:100
+task:400
+edge:566
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+7450
+check over!!tof: 7450
+before more128085
+271 271
+after totalv125579gap is2506
+in check
+check corrected!!!
+GA Serial searching.......
+265 265
+in check
+check corrected!!!
+here../result/100/0/
+ssadsa../result/100/0/service.txttotal demand:25226
+service size500
+graph size:566
+node:100
+task:500
+edge:566
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+8319
+check over!!tof: 8319
+before more173398
+296 296
+after totalv171325gap is2073
+in check
+check corrected!!!
+GA Serial searching.......
+294 294
+in check
+check corrected!!!
+here../result/100/0/
+ssadsa../result/100/0/service.txttotal demand:30371
+service size600
+graph size:566
+node:100
+task:600
+edge:566
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+8791
+check over!!tof: 8791
+before more219123
+316 316
+after totalv216799gap is2324
+in check
+check corrected!!!
+GA Serial searching.......
+317 317
+in check
+check corrected!!!
+here../result/100/2/
+ssadsa../result/100/2/service.txttotal demand:5284
+service size100
+graph size:580
+node:100
+task:100
+edge:580
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+3932
+check over!!tof: 3932
+before more15116
+100 100
+after totalv14329gap is787
+in check
+check corrected!!!
+GA Serial searching.......
+100 100
+in check
+check corrected!!!
+here../result/100/2/
+ssadsa../result/100/2/service.txttotal demand:10162
+service size200
+graph size:580
+node:100
+task:200
+edge:580
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+5707
+check over!!tof: 5707
+before more42017
+187 187
+after totalv38286gap is3731
+in check
+check corrected!!!
+GA Serial searching.......
+184 184
+in check
+check corrected!!!
+here../result/100/2/
+ssadsa../result/100/2/service.txttotal demand:15187
+service size300
+graph size:580
+node:100
+task:300
+edge:580
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+6897
+check over!!tof: 6897
+before more76691
+245 245
+after totalv72547gap is4144
+in check
+check corrected!!!
+GA Serial searching.......
+246 246
+in check
+check corrected!!!
+here../result/100/2/
+ssadsa../result/100/2/service.txttotal demand:20109
+service size400
+graph size:580
+node:100
+task:400
+edge:580
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+7716
+check over!!tof: 7716
+before more120797
+288 288
+after totalv115364gap is5433
+in check
+check corrected!!!
+GA Serial searching.......
+284 284
+in check
+check corrected!!!
+here../result/100/2/
+ssadsa../result/100/2/service.txttotal demand:25226
+service size500
+graph size:580
+node:100
+task:500
+edge:580
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+8197
+check over!!tof: 8197
+before more160104
+312 312
+after totalv155487gap is4617
+in check
+check corrected!!!
+GA Serial searching.......
+312 312
+in check
+check corrected!!!
+here../result/100/2/
+ssadsa../result/100/2/service.txttotal demand:30371
+service size600
+graph size:580
+node:100
+task:600
+edge:580
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+8871
+check over!!tof: 8871
+before more210698
+327 327
+after totalv207099gap is3599
+in check
+check corrected!!!
+GA Serial searching.......
+333 333
+in check
+check corrected!!!
+here../result/200/0/
+ssadsa../result/200/0/service.txttotal demand:10162
+service size200
+graph size:1150
+node:200
+task:200
+edge:1150
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+6827
+check over!!tof: 6827
+before more36887
+197 197
+after totalv36305gap is582
+in check
+check corrected!!!
+GA Serial searching.......
+199 199
+in check
+check corrected!!!
+here../result/200/0/
+ssadsa../result/200/0/service.txttotal demand:20109
+service size400
+graph size:1150
+node:200
+task:400
+edge:1150
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+10050
+check over!!tof: 10050
+before more103972
+362 362
+after totalv96084gap is7888
+in check
+check corrected!!!
+GA Serial searching.......
+358 358
+in check
+check corrected!!!
+here../result/200/0/
+ssadsa../result/200/0/service.txttotal demand:30371
+service size600
+graph size:1150
+node:200
+task:600
+edge:1150
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+11702
+check over!!tof: 11702
+before more193957
+436 436
+after totalv188318gap is5639
+in check
+check corrected!!!
+GA Serial searching.......
+450 450
+in check
+check corrected!!!
+here../result/200/0/
+ssadsa../result/200/0/service.txttotal demand:40707
+service size800
+graph size:1150
+node:200
+task:800
+edge:1150
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+13391
+check over!!tof: 13391
+before more282829
+495 495
+after totalv277313gap is5516
+in check
+check corrected!!!
+GA Serial searching.......
+487 487
+in check
+check corrected!!!
+here../result/200/0/
+ssadsa../result/200/0/service.txttotal demand:51295
+service size1000
+graph size:1150
+node:200
+task:1000
+edge:1150
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+14267
+check over!!tof: 14267
+before more380641
+538 538
+after totalv374776gap is5865
+in check
+check corrected!!!
+GA Serial searching.......
+521 521
+in check
+check corrected!!!
+here../result/200/0/
+ssadsa../result/200/0/service.txttotal demand:61835
+service size1200
+graph size:1150
+node:200
+task:1200
+edge:1150
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+15182
+check over!!tof: 15182
+before more477666
+576 576
+after totalv472493gap is5173
+in check
+check corrected!!!
+GA Serial searching.......
+564 564
+in check
+check corrected!!!
+here../result/200/2/
+ssadsa../result/200/2/service.txttotal demand:10162
+service size200
+graph size:1180
+node:200
+task:200
+edge:1180
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+6582
+check over!!tof: 6582
+before more33711
+197 197
+after totalv32019gap is1692
+in check
+check corrected!!!
+GA Serial searching.......
+199 199
+in check
+check corrected!!!
+here../result/200/2/
+ssadsa../result/200/2/service.txttotal demand:20109
+service size400
+graph size:1180
+node:200
+task:400
+edge:1180
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+9951
+check over!!tof: 9951
+before more94184
+368 368
+after totalv84848gap is9336
+in check
+check corrected!!!
+GA Serial searching.......
+376 376
+in check
+check corrected!!!
+here../result/200/2/
+ssadsa../result/200/2/service.txttotal demand:30371
+service size600
+graph size:1180
+node:200
+task:600
+edge:1180
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+11702
+check over!!tof: 11702
+before more173706
+467 467
+after totalv163744gap is9962
+in check
+check corrected!!!
+GA Serial searching.......
+457 457
+in check
+check corrected!!!
+here../result/200/2/
+ssadsa../result/200/2/service.txttotal demand:40707
+service size800
+graph size:1180
+node:200
+task:800
+edge:1180
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+13548
+check over!!tof: 13548
+before more266118
+524 524
+after totalv254463gap is11655
+in check
+check corrected!!!
+GA Serial searching.......
+517 517
+in check
+check corrected!!!
+here../result/200/2/
+ssadsa../result/200/2/service.txttotal demand:51295
+service size1000
+graph size:1180
+node:200
+task:1000
+edge:1180
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+14597
+check over!!tof: 14597
+before more359691
+563 563
+after totalv349942gap is9749
+in check
+check corrected!!!
+GA Serial searching.......
+569 569
+in check
+check corrected!!!
+here../result/200/2/
+ssadsa../result/200/2/service.txttotal demand:61835
+service size1200
+graph size:1180
+node:200
+task:1200
+edge:1180
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+15602
+check over!!tof: 15602
+before more457702
+628 628
+after totalv448594gap is9108
+in check
+check corrected!!!
+GA Serial searching.......
+614 614
+in check
+check corrected!!!
+here../result/300/0/
+ssadsa../result/300/0/service.txttotal demand:15187
+service size300
+graph size:1816
+node:300
+task:300
+edge:1816
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+9736
+check over!!tof: 9736
+before more63721
+293 293
+after totalv61569gap is2152
+in check
+check corrected!!!
+GA Serial searching.......
+294 294
+in check
+check corrected!!!
+here../result/300/0/
+ssadsa../result/300/0/service.txttotal demand:30371
+service size600
+graph size:1816
+node:300
+task:600
+edge:1816
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+14260
+check over!!tof: 14260
+before more169960
+525 525
+after totalv160111gap is9849
+in check
+check corrected!!!
+GA Serial searching.......
+515 515
+in check
+check corrected!!!
+here../result/300/0/
+ssadsa../result/300/0/service.txttotal demand:45813
+service size900
+graph size:1816
+node:300
+task:900
+edge:1816
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+17042
+check over!!tof: 17042
+before more299693
+648 648
+after totalv290077gap is9616
+in check
+check corrected!!!
+GA Serial searching.......
+663 663
+in check
+check corrected!!!
+here../result/300/0/
+ssadsa../result/300/0/service.txttotal demand:61835
+service size1200
+graph size:1816
+node:300
+task:1200
+edge:1816
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+19123
+check over!!tof: 19123
+before more441192
+747 747
+after totalv431472gap is9720
+in check
+check corrected!!!
+GA Serial searching.......
+732 732
+in check
+check corrected!!!
+here../result/300/0/
+ssadsa../result/300/0/service.txttotal demand:77218
+service size1500
+graph size:1816
+node:300
+task:1500
+edge:1816
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+20859
+check over!!tof: 20859
+before more583685
+782 782
+after totalv575065gap is8620
+in check
+check corrected!!!
+GA Serial searching.......
+783 783
+in check
+check corrected!!!
+here../result/300/0/
+ssadsa../result/300/0/service.txttotal demand:92737
+service size1800
+graph size:1816
+node:300
+task:1800
+edge:1816
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+22120
+check over!!tof: 22120
+before more732209
+837 837
+after totalv722765gap is9444
+in check
+check corrected!!!
+GA Serial searching.......
+824 824
+in check
+check corrected!!!
+here../result/300/2/
+ssadsa../result/300/2/service.txttotal demand:15187
+service size300
+graph size:1780
+node:300
+task:300
+edge:1780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+9377
+check over!!tof: 9377
+before more51520
+299 299
+after totalv49206gap is2314
+in check
+check corrected!!!
+GA Serial searching.......
+300 300
+in check
+check corrected!!!
+here../result/300/2/
+ssadsa../result/300/2/service.txttotal demand:30371
+service size600
+graph size:1780
+node:300
+task:600
+edge:1780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+13302
+check over!!tof: 13302
+before more152612
+556 556
+after totalv131905gap is20707
+in check
+check corrected!!!
+GA Serial searching.......
+545 545
+in check
+check corrected!!!
+here../result/300/2/
+ssadsa../result/300/2/service.txttotal demand:45813
+service size900
+graph size:1780
+node:300
+task:900
+edge:1780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+15972
+check over!!tof: 15972
+before more280415
+689 689
+after totalv262087gap is18328
+in check
+check corrected!!!
+GA Serial searching.......
+692 692
+in check
+check corrected!!!
+here../result/300/2/
+ssadsa../result/300/2/service.txttotal demand:61835
+service size1200
+graph size:1780
+node:300
+task:1200
+edge:1780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+18051
+check over!!tof: 18051
+before more422630
+767 767
+after totalv403905gap is18725
+in check
+check corrected!!!
+GA Serial searching.......
+769 769
+in check
+check corrected!!!
+here../result/300/2/
+ssadsa../result/300/2/service.txttotal demand:77218
+service size1500
+graph size:1780
+node:300
+task:1500
+edge:1780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+19684
+check over!!tof: 19684
+before more560146
+808 808
+after totalv545248gap is14898
+in check
+check corrected!!!
+GA Serial searching.......
+852 852
+in check
+check corrected!!!
+here../result/300/2/
+ssadsa../result/300/2/service.txttotal demand:92737
+service size1800
+graph size:1780
+node:300
+task:1800
+edge:1780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+21192
+check over!!tof: 21192
+before more705189
+887 887
+after totalv689513gap is15676
+in check
+check corrected!!!
+GA Serial searching.......
+902 902
+in check
+check corrected!!!
+here../result/500/0/
+ssadsa../result/500/0/service.txttotal demand:25226
+service size500
+graph size:2942
+node:500
+task:500
+edge:2942
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+15181
+check over!!tof: 15181
+before more120330
+487 487
+after totalv114684gap is5646
+in check
+check corrected!!!
+GA Serial searching.......
+490 490
+in check
+check corrected!!!
+here../result/500/0/
+ssadsa../result/500/0/service.txttotal demand:51295
+service size1000
+graph size:2942
+node:500
+task:1000
+edge:2942
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+21532
+check over!!tof: 21532
+before more311871
+826 826
+after totalv299399gap is12472
+in check
+check corrected!!!
+GA Serial searching.......
+824 824
+in check
+check corrected!!!
+here../result/500/0/
+ssadsa../result/500/0/service.txttotal demand:77218
+service size1500
+graph size:2942
+node:500
+task:1500
+edge:2942
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+25272
+check over!!tof: 25272
+before more553565
+983 983
+after totalv540060gap is13505
+in check
+check corrected!!!
+GA Serial searching.......
+990 990
+in check
+check corrected!!!
+here../result/500/0/
+ssadsa../result/500/0/service.txttotal demand:102268
+service size2000
+graph size:2942
+node:500
+task:2000
+edge:2942
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+28151
+check over!!tof: 28151
+before more779708
+1122 1122
+after totalv766301gap is13407
+in check
+check corrected!!!
+GA Serial searching.......
+1114 1114
+in check
+check corrected!!!
+here../result/500/0/
+ssadsa../result/500/0/service.txttotal demand:127252
+service size2500
+graph size:2942
+node:500
+task:2500
+edge:2942
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+30460
+check over!!tof: 30460
+before more1.01262e+06
+1219 1219
+after totalv1.00078e+06gap is11838
+in check
+check corrected!!!
+GA Serial searching.......
+1201 1201
+in check
+check corrected!!!
+here../result/500/0/
+ssadsa../result/500/0/service.txttotal demand:152246
+service size3000
+graph size:2942
+node:500
+task:3000
+edge:2942
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+32069
+check over!!tof: 32069
+before more1.24792e+06
+1310 1310
+after totalv1.23544e+06gap is12484
+in check
+check corrected!!!
+GA Serial searching.......
+1305 1305
+in check
+check corrected!!!
+here../result/500/2/
+ssadsa../result/500/2/service.txttotal demand:25226
+service size500
+graph size:2980
+node:500
+task:500
+edge:2980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+13237
+check over!!tof: 13237
+before more110432
+498 498
+after totalv94105gap is16327
+in check
+check corrected!!!
+GA Serial searching.......
+498 498
+in check
+check corrected!!!
+here../result/500/2/
+ssadsa../result/500/2/service.txttotal demand:51295
+service size1000
+graph size:2980
+node:500
+task:1000
+edge:2980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+19020
+check over!!tof: 19020
+before more295143
+886 886
+after totalv261370gap is33773
+in check
+check corrected!!!
+GA Serial searching.......
+870 870
+in check
+check corrected!!!
+here../result/500/2/
+ssadsa../result/500/2/service.txttotal demand:77218
+service size1500
+graph size:2980
+node:500
+task:1500
+edge:2980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+23129
+check over!!tof: 23129
+before more515937
+1065 1065
+after totalv486808gap is29129
+in check
+check corrected!!!
+GA Serial searching.......
+1077 1077
+in check
+check corrected!!!
+here../result/500/2/
+ssadsa../result/500/2/service.txttotal demand:102268
+service size2000
+graph size:2980
+node:500
+task:2000
+edge:2980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+26018
+check over!!tof: 26018
+before more740685
+1224 1224
+after totalv708209gap is32476
+in check
+check corrected!!!
+GA Serial searching.......
+1230 1230
+in check
+check corrected!!!
+here../result/500/2/
+ssadsa../result/500/2/service.txttotal demand:127252
+service size2500
+graph size:2980
+node:500
+task:2500
+edge:2980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+28455
+check over!!tof: 28455
+before more961368
+1345 1345
+after totalv932903gap is28465
+in check
+check corrected!!!
+GA Serial searching.......
+1329 1329
+in check
+check corrected!!!
+here../result/500/2/
+ssadsa../result/500/2/service.txttotal demand:152246
+service size3000
+graph size:2980
+node:500
+task:3000
+edge:2980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+30349
+check over!!tof: 30349
+before more1.20862e+06
+1419 1419
+after totalv1.18021e+06gap is28405
+in check
+check corrected!!!
+GA Serial searching.......
+1422 1422
+in check
+check corrected!!!
+here../result/800/0/
+ssadsa../result/800/0/service.txttotal demand:40707
+service size800
+graph size:4832
+node:800
+task:800
+edge:4832
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+23062
+check over!!tof: 23062
+before more201664
+783 783
+after totalv192972gap is8692
+in check
+check corrected!!!
+GA Serial searching.......
+779 779
+in check
+check corrected!!!
+here../result/800/0/
+ssadsa../result/800/0/service.txttotal demand:81929
+service size1600
+graph size:4832
+node:800
+task:1600
+edge:4832
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+32676
+check over!!tof: 32676
+before more533978
+1285 1285
+after totalv513592gap is20386
+in check
+check corrected!!!
+GA Serial searching.......
+1316 1316
+in check
+check corrected!!!
+here../result/800/0/
+ssadsa../result/800/0/service.txttotal demand:122427
+service size2400
+graph size:4832
+node:800
+task:2400
+edge:4832
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+38482
+check over!!tof: 38482
+before more893385
+1573 1573
+after totalv871056gap is22329
+in check
+check corrected!!!
+GA Serial searching.......
+1584 1584
+in check
+check corrected!!!
+here../result/800/0/
+ssadsa../result/800/0/service.txttotal demand:162342
+service size3200
+graph size:4832
+node:800
+task:3200
+edge:4832
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+43140
+check over!!tof: 43140
+before more1.25713e+06
+1810 1810
+after totalv1.23518e+06gap is21959
+in check
+check corrected!!!
+GA Serial searching.......
+1742 1742
+in check
+check corrected!!!
+here../result/800/0/
+ssadsa../result/800/0/service.txttotal demand:203266
+service size4000
+graph size:4832
+node:800
+task:4000
+edge:4832
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+46236
+check over!!tof: 46236
+before more1.65444e+06
+1918 1918
+after totalv1.63365e+06gap is20790
+in check
+check corrected!!!
+GA Serial searching.......
+1933 1933
+in check
+check corrected!!!
+here../result/800/0/
+ssadsa../result/800/0/service.txttotal demand:243936
+service size4800
+graph size:4832
+node:800
+task:4800
+edge:4832
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+49155
+check over!!tof: 49155
+before more2.03972e+06
+2017 2017
+after totalv2.0204e+06gap is19323
+in check
+check corrected!!!
+GA Serial searching.......
+2084 2084
+in check
+check corrected!!!
+here../result/800/2/
+ssadsa../result/800/2/service.txttotal demand:40707
+service size800
+graph size:4780
+node:800
+task:800
+edge:4780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+20721
+check over!!tof: 20721
+before more188809
+787 787
+after totalv162186gap is26623
+in check
+check corrected!!!
+GA Serial searching.......
+785 785
+in check
+check corrected!!!
+here../result/800/2/
+ssadsa../result/800/2/service.txttotal demand:81929
+service size1600
+graph size:4780
+node:800
+task:1600
+edge:4780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+29616
+check over!!tof: 29616
+before more500309
+1376 1376
+after totalv449470gap is50839
+in check
+check corrected!!!
+GA Serial searching.......
+1377 1377
+in check
+check corrected!!!
+here../result/800/2/
+ssadsa../result/800/2/service.txttotal demand:122427
+service size2400
+graph size:4780
+node:800
+task:2400
+edge:4780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+35590
+check over!!tof: 35590
+before more847508
+1680 1680
+after totalv803936gap is43572
+in check
+check corrected!!!
+GA Serial searching.......
+1671 1671
+in check
+check corrected!!!
+here../result/800/2/
+ssadsa../result/800/2/service.txttotal demand:162342
+service size3200
+graph size:4780
+node:800
+task:3200
+edge:4780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+40048
+check over!!tof: 40048
+before more1.21334e+06
+1887 1887
+after totalv1.16639e+06gap is46950
+in check
+check corrected!!!
+GA Serial searching.......
+1870 1870
+in check
+check corrected!!!
+here../result/800/2/
+ssadsa../result/800/2/service.txttotal demand:203266
+service size4000
+graph size:4780
+node:800
+task:4000
+edge:4780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+43538
+check over!!tof: 43538
+before more1.59019e+06
+2059 2059
+after totalv1.54925e+06gap is40941
+in check
+check corrected!!!
+GA Serial searching.......
+2066 2066
+in check
+check corrected!!!
+here../result/800/2/
+ssadsa../result/800/2/service.txttotal demand:243936
+service size4800
+graph size:4780
+node:800
+task:4800
+edge:4780
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+46295
+check over!!tof: 46295
+before more1.9734e+06
+2210 2210
+after totalv1.93084e+06gap is42557
+in check
+check corrected!!!
+GA Serial searching.......
+2208 2208
+in check
+check corrected!!!
+here../result/1000/0/
+ssadsa../result/1000/0/service.txttotal demand:51295
+service size1000
+graph size:6032
+node:1000
+task:1000
+edge:6032
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+28095
+check over!!tof: 28095
+before more273550
+970 970
+after totalv256052gap is17498
+in check
+check corrected!!!
+GA Serial searching.......
+969 969
+in check
+check corrected!!!
+here../result/1000/0/
+ssadsa../result/1000/0/service.txttotal demand:102268
+service size2000
+graph size:6032
+node:1000
+task:2000
+edge:6032
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+39009
+check over!!tof: 39009
+before more694537
+1582 1582
+after totalv667017gap is27520
+in check
+check corrected!!!
+GA Serial searching.......
+1589 1589
+in check
+check corrected!!!
+here../result/1000/0/
+ssadsa../result/1000/0/service.txttotal demand:152246
+service size3000
+graph size:6032
+node:1000
+task:3000
+edge:6032
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+46372
+check over!!tof: 46372
+before more1.14211e+06
+1942 1942
+after totalv1.11257e+06gap is29540
+in check
+check corrected!!!
+GA Serial searching.......
+1917 1917
+in check
+check corrected!!!
+here../result/1000/0/
+ssadsa../result/1000/0/service.txttotal demand:203266
+service size4000
+graph size:6032
+node:1000
+task:4000
+edge:6032
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+51466
+check over!!tof: 51466
+before more1.60746e+06
+2177 2177
+after totalv1.58193e+06gap is25529
+in check
+check corrected!!!
+GA Serial searching.......
+2175 2175
+in check
+check corrected!!!
+here../result/1000/0/
+ssadsa../result/1000/0/service.txttotal demand:254457
+service size5000
+graph size:6032
+node:1000
+task:5000
+edge:6032
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+55480
+check over!!tof: 55480
+before more2.09761e+06
+2347 2347
+after totalv2.07125e+06gap is26363
+in check
+check corrected!!!
+GA Serial searching.......
+2326 2326
+in check
+check corrected!!!
+here../result/1000/0/
+ssadsa../result/1000/0/service.txttotal demand:306188
+service size6000
+graph size:6032
+node:1000
+task:6000
+edge:6032
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+58737
+check over!!tof: 58737
+before more2.58207e+06
+2535 2535
+after totalv2.55914e+06gap is22930
+in check
+check corrected!!!
+GA Serial searching.......
+2512 2512
+in check
+check corrected!!!
+here../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:51295
+service size1000
+graph size:5980
+node:1000
+task:1000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+24079
+check over!!tof: 24079
+before more248460
+989 989
+after totalv205814gap is42646
+in check
+check corrected!!!
+GA Serial searching.......
+991 991
+in check
+check corrected!!!
+here../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:102268
+service size2000
+graph size:5980
+node:1000
+task:2000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+34369
+check over!!tof: 34369
+before more646267
+1699 1699
+after totalv572337gap is73930
+in check
+check corrected!!!
+GA Serial searching.......
+1695 1695
+in check
+check corrected!!!
+here../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:152246
+service size3000
+graph size:5980
+node:1000
+task:3000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+40994
+check over!!tof: 40994
+before more1.08181e+06
+2057 2057
+after totalv1.02056e+06gap is61250
+in check
+check corrected!!!
+GA Serial searching.......
+2075 2075
+in check
+check corrected!!!
+here../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:203266
+service size4000
+graph size:5980
+node:1000
+task:4000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+46706
+check over!!tof: 46706
+before more1.53924e+06
+2336 2336
+after totalv1.48114e+06gap is58099
+in check
+check corrected!!!
+GA Serial searching.......
+2350 2350
+in check
+check corrected!!!
+here../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:254457
+service size5000
+graph size:5980
+node:1000
+task:5000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+50802
+check over!!tof: 50802
+before more2.01252e+06
+2553 2553
+after totalv1.95301e+06gap is59510
+in check
+check corrected!!!
+GA Serial searching.......
+2577 2577
+in check
+check corrected!!!
+here../result/1000/2/
+ssadsa../result/1000/2/service.txttotal demand:306188
+service size6000
+graph size:5980
+node:1000
+task:6000
+edge:5980
+type:BA
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+54842
+check over!!tof: 54842
+before more2.5088e+06
+2693 2693
+after totalv2.4484e+06gap is60395
+in check
+check corrected!!!
+GA Serial searching.......
+2711 2711
+in check
+check corrected!!!
+here../result/2000/0/
+ssadsa../result/2000/0/service.txttotal demand:102268
+service size2000
+graph size:11838
+node:2000
+task:2000
+edge:11838
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+51783
+check over!!tof: 51783
+before more606310
+1924 1924
+after totalv575700gap is30610
+in check
+check corrected!!!
+GA Serial searching.......
+1936 1936
+in check
+check corrected!!!
+here../result/2000/0/
+ssadsa../result/2000/0/service.txttotal demand:203266
+service size4000
+graph size:11838
+node:2000
+task:4000
+edge:11838
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+70966
+check over!!tof: 70966
+before more1.48009e+06
+2981 2981
+after totalv1.43628e+06gap is43811
+in check
+check corrected!!!
+GA Serial searching.......
+2963 2963
+in check
+check corrected!!!
+here../result/2000/0/
+ssadsa../result/2000/0/service.txttotal demand:306188
+service size6000
+graph size:11838
+node:2000
+task:6000
+edge:11838
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+82914
+check over!!tof: 82914
+before more2.42977e+06
+3564 3564
+after totalv2.38527e+06gap is44494
+in check
+check corrected!!!
+GA Serial searching.......
+3597 3597
+in check
+check corrected!!!
+here../result/2000/0/
+ssadsa../result/2000/0/service.txttotal demand:407085
+service size8000
+graph size:11838
+node:2000
+task:8000
+edge:11838
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+91368
+check over!!tof: 91368
+before more3.38869e+06
+4005 4005
+after totalv3.34442e+06gap is44274
+in check
+check corrected!!!
+GA Serial searching.......
+4054 4054
+in check
+check corrected!!!
+here../result/2000/0/
+ssadsa../result/2000/0/service.txttotal demand:507511
+service size10000
+graph size:11838
+node:2000
+task:10000
+edge:11838
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+98093
+check over!!tof: 98093
+before more4.33964e+06
+4390 4390
+after totalv4.29604e+06gap is43595
+in check
+check corrected!!!
+GA Serial searching.......
+4368 4368
+in check
+check corrected!!!
+here../result/2000/0/
+ssadsa../result/2000/0/service.txttotal demand:607696
+service size12000
+graph size:11838
+node:2000
+task:12000
+edge:11838
+type:ER
+GRPHTYPE:1
+capacity:100
+GA Parallel searching.......
+104039
+check over!!tof: 104039
+before more5.32769e+06
+4610 4610
+after totalv5.28361e+06gap is44077
+in check
+check corrected!!!
+GA Serial searching.......
+4590 4590
+in check
+check corrected!!!
+here
