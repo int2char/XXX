@@ -12,7 +12,7 @@ class LagSerial
 {
 public:
 	vector<pair<string,float> > dijkstraSerial(vector<service> &s,ostream&Out = cout);
-	LagSerial(Graph &_G);
+	LagSerial(Graph &_G,vector<vector<int>>&mind);
 	~LagSerial();
 private:
 	Graph G;
@@ -26,6 +26,7 @@ private:
 	int* mask;
 	vector<vector<int>>StoreRoute;
 	vector<vector<int>>BestRoute;
+	vector<vector<int>>mind;
 	float*capacity;
 };
 

@@ -14,6 +14,7 @@
 #include"CplexM.h"
 #include"GAparrel.h"
 #include"time.h"
+#include"dijkstra.h"
 #include<map>
 #include <sys/time.h>
 
@@ -404,12 +405,12 @@ void inline Pathcheck(Graph &G, vector<service>&ser){
 	delete[]Path;
 	fclose(data);
 }
-void inline Lag_Parrel(Graph &G, vector<service>&ser,ofstream&outfile)
-{	GraphPath OP(G);
+void inline Lag_Parrel(Graph &G, vector<service>&ser,vector<vector<int>>&mind,ofstream&outfile)
+{	GraphPath OP(G,mind);
 	OP.bellmanFordCuda(ser,outfile);
 }
-void inline Lag_Serial(Graph &G, vector<service>&ser,ofstream&outfile){
-	LagSerial ls(G);
+void inline Lag_Serial(Graph &G, vector<service>&ser,vector<vector<int>>&mind,ofstream&outfile){
+	LagSerial ls(G,mind);
 	ls.dijkstraSerial(ser,outfile);
 }
 void inline GA_Parrel(Graph &G, vector<service>&ser,ofstream&outfile)
@@ -450,9 +451,7 @@ void inline Cplexsolve(Graph &G, vector<service>&ser,ofstream&outfile)
 	redata.second.push_back(make_pair(string("time"),float((L2-L1)/1000)));
 	redata.second.push_back(make_pair(string("iter_time"),float(L2-L1)/(1000*redata.first)));
 	writejsondata(DATAFILE,redata.second,string("Cplex_solve"));
-
 }
-
 int main(int args,char*arg[])
 {
 	cout<<INPUTFILE<<endl;
@@ -474,14 +473,17 @@ int main(int args,char*arg[])
   cout<<"GRPHTYPE:"<<GRAPHTYPE<<endl;
   cout<<"capacity:"<<CAPACITY<<endl;
   ofstream outfile(INFOFILE,ios::app);
+  vector<vector<int>>mind(G.n,vector<int>(G.n,10000));
+  for(int i=0;i<G.n;i++)
+  	puredijkstra(&G,i,mind);
   for(int i=0;i<args;i++)
   {
 	  switch (arg[i][0])
 	  {
 	  	  case 'L':
-	  		  {Lag_Parrel(G,ser,outfile);break;}
+	  		  {Lag_Parrel(G,ser,mind,outfile);break;}
 	  	  case 'S':
-	  		  {Lag_Serial(G,ser,outfile);break;}
+	  		  {Lag_Serial(G,ser,mind,outfile);break;}
 	  	  case 'G':
 	  		  {GA_Parrel(G,ser,outfile);break;}
 	  	  case 'T':

@@ -97,3 +97,28 @@ void dijcapacity(Graph *G, int s, int t, float d[], int peg[], float lambda[], f
 		}
 	} while (!heap.empty());
 }
+void puredijkstra(Graph *G,int s,vector<vector<int>>&d){
+	/*int n_num = G->n;
+	for (int i = 0; i < n_num; i++)
+		if (i == s)
+			d[s][i] = 0;
+		else
+			d[s][i] = INF;*/
+	d[s][s]=0;
+	queue<int>que;
+	que.push(s);
+	do{
+		int cur=que.front();
+		que.pop(); 
+		int size = G->near[cur].size();
+		for (int i = 0; i<size; i++){
+			int id = G->near[cur][i];	
+				Edge* e = &G->incL[id];
+				if (d[s][e->head]>(d[s][e->tail]+1))
+				{
+					d[s][e->head] = d[s][e->tail]+1;
+					que.push(e->head);
+				}
+		}
+	} while (!que.empty());
+}

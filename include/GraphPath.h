@@ -13,7 +13,7 @@ class GraphPath
 {
 public:
 	vector<pair<string,float> >bellmanFordCuda(vector<service>&ser,ostream& Out);
-	GraphPath(Graph &_G);
+	GraphPath(Graph &_G,vector<vector<int>>&mind);
 	~GraphPath();
 private:
 	Graph G;
@@ -43,6 +43,7 @@ private:
 	vector<vector<int> > StoreRoute;
 	vector<vector<int> > BestRoute;
 	float*capacity;
+	vector<vector<int>>&mind;
 };
 
 #endif

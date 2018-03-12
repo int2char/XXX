@@ -50,7 +50,7 @@ bool cmpv(RouteMark a1, RouteMark a2){
 		return true;
 	return false;
 }
-float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, float *pd, int *te, int *st, int num, int mum, double& bestadd, int&stillS, int wide, int len, vector<vector<int>>&StoreRoute, vector<vector<int>>&BestRoute,vector<vector<int>>&TmpRoute,vector<set<int> >&stpair, ostream& Out, vector<RouteMark>& bestroutes, double totalflow)
+float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, float *pd, int *te, int *st, int num, int mum, double& bestadd, int&stillS, int wide, int len, vector<vector<int>>&StoreRoute, vector<vector<int>>&BestRoute,vector<vector<int>>&TmpRoute,vector<set<int> >&stpair, ostream& Out, vector<RouteMark>& bestroutes, double totalflow,vector<vector<int>>&mind)
 {
 	//float stt=float(1000*clock())/ CLOCKS_PER_SEC;
 	totalflow=0;
@@ -78,7 +78,6 @@ float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 		Routes.push_back(RouteMark(value, i));
 	}
 	sort(Routes.begin(), Routes.end(), cmpv);
-	float maxv=Routes[Routes.size()-1].length;
 	//float as=float(1000*clock())/ CLOCKS_PER_SEC;
 	//cout<<"after as "<<as-stt<<endl;
 	for (int ai = 0; ai <Routes.size(); ai++)
@@ -173,7 +172,7 @@ float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 			}
 		}
 	}
-	//float aadd=float(1000*clock())/ CLOCKS_PER_SEC;
+	float aadd=float(1000*clock())/ CLOCKS_PER_SEC;
 	//cout<<"after add "<<aadd-as<<endl;
 	float *bca =new float[mum];
 	for(int i=0;i<mum;i++)
@@ -185,7 +184,8 @@ float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 		vector<int> stillremain;
 		for (int i = 0; i < ren; i++){
 			float demand = pd[remain[i]];
-			BFS(G, st[remain[i]], te[remain[i]], dist, peg,demand,bca,maxv);
+			int hops=StoreRoute[remain[i]].size()-2;
+			BFSO(G, st[remain[i]], te[remain[i]], dist, peg,demand,bca,hops,mind);
 			int f = peg[te[remain[i]]];
 			if (dist[te[remain[i]]]<INFHOPS)
 			{
@@ -237,7 +237,7 @@ float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 	}
 	//else
 		//cout<<tflow<<endl;
-	//float au=float(1000*clock())/ CLOCKS_PER_SEC;
+	float au=float(1000*clock())/ CLOCKS_PER_SEC;
 	//cout<<"after bfs "<<au-aadd<<endl;
 	stillS = remain.size();
 	int maskC = 0;

@@ -13,7 +13,6 @@
 #include"BFS.h"
 #include"taskPath.h"
 #include"const.h"
-#include"routemask.h"
 #include"PathArrange.h"
 #include<fstream>
 using namespace std;
@@ -29,7 +28,7 @@ bool cmp5(float a, float b)
 {
 	return a<b;
 }
-LagSerial::LagSerial(Graph &_G):G(_G),StoreRoute(Task, vector<int>(1, -1)), BestRoute(Task, vector<int>())
+LagSerial::LagSerial(Graph &_G,vector<vector<int>>&_mind):G(_G),StoreRoute(Task, vector<int>(1, -1)), BestRoute(Task, vector<int>()),mind(_mind)
 {
 	st = new int[Task*sizeof(int)];
 	te = new int[Task*sizeof(int)];
@@ -117,7 +116,7 @@ vector<pair<string,float> > LagSerial::dijkstraSerial(vector<service> &s,ostream
 		//cout<<float(ss)/float(gugu)<<endl;
 		int n = 0;
 		for(int i=0;i<NODE;i++)stset[i].clear();
-		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, 1, NODE, StoreRoute, BestRoute,TmpRoute,stset, Out, bestroutes, totalflow);
+		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, 1, NODE, StoreRoute, BestRoute,TmpRoute,stset, Out, bestroutes, totalflow,mind);
 		if (value<best)
 		{
 			best = value;

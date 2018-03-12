@@ -92,7 +92,7 @@ void GraphPath::Copy2GPU(std::vector<service> &s){
 	cudaMemcpy(dev_lambda, lambda, EDge*sizeof(float), cudaMemcpyHostToDevice);
 	cudaMemcpy(dev_mask, mask, Task*sizeof(int), cudaMemcpyHostToDevice);
 }
-GraphPath::GraphPath(Graph&_G):G(_G),StoreRoute(Task, vector<int>(1,-1)), BestRoute(Task, vector<int>())
+GraphPath::GraphPath(Graph&_G,vector<vector<int>>&_mind):G(_G),StoreRoute(Task, vector<int>(1,-1)), BestRoute(Task, vector<int>()),mind(_mind)
 {
 	cudaMalloc(&dev_edge, sizeof(Edge)*EDge);
 	cudaMemcpy(dev_edge, G.incL, EDge* sizeof(Edge), cudaMemcpyHostToDevice);
@@ -186,7 +186,7 @@ vector<pair<string,float> > GraphPath::bellmanFordCuda(vector<service>&ser,ostre
 		cudaMemcpy(d, dev_d, sizeof(float)*NODE*NODE, cudaMemcpyDeviceToHost);
 		float ee=float(1000*clock())/ CLOCKS_PER_SEC;
 		//cout<<"gpu time is "<<ee-ss<<endl;
-		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, NODE, 1, StoreRoute, BestRoute,TmpRoute,stset,Out, bestroutes,totalflow);
+		int value = rearrange(&G, capacity, lambda, pre, d, pd, te, st, num, mum, bestadd, stillS, NODE, 1, StoreRoute, BestRoute,TmpRoute,stset,Out, bestroutes,totalflow,mind);
 		float eee=float(1000*clock())/ CLOCKS_PER_SEC;
 		//cout<<"rearrange time is "<<eee-ee<<endl;
 		middata.push_back(value);
