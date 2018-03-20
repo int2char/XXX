@@ -18,7 +18,7 @@ struct FitVMP {
 };
 struct FitCmp
 {
-	bool operator()(FitVMP &a, FitVMP &b)
+	bool operator()(FitVMP a, FitVMP b)
 	{
 		return a.value>b.value;
 	};
@@ -229,8 +229,8 @@ private:
 			}
 			Fits.push_back(FitVMP(flows, i));
 		}
-		for(int i=0;i<Fits.size();i++)
-			cout<<Fits[i].value<<" "<<Fits[i].mark<<endl;
+		//for(int i=0;i<Fits.size();i++)
+			//cout<<Fits[i].value<<" "<<Fits[i].mark<<endl;
 		sort(Fits.begin(), Fits.end(), FitCmp());
 		/*for (int i = 0; i < pop; i++)
 			CuFits[i] = Fits[i];
@@ -251,7 +251,6 @@ private:
 		{
 			int k = 0;
 			if (co[j] >= 0){
-				cout<<co[j]<<endl;
 				dd += demand[j];
 				while (true)
 				{
@@ -269,7 +268,6 @@ private:
 			}
 		}
 		cout << "check over!!tof: " << endl;
-		
 	}
 	pair<float,int> more(){
 				float totalv = fit_value[0];

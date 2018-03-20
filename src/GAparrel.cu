@@ -315,7 +315,7 @@ vector<pair<string,float> > NewGAParrel::GAsearch(){
 		dim3 blocks_s3(Task / 1024 + 1, Gama + Beta);
 		Reload << <blocks_s3, 1024 >> >(dev_chormes, dev_childs, dev_fit_key);
 		
-		cout<<ans<<" "<<best<<endl;
+		//cout<<ans<<" "<<best<<endl;
 		if (ans<best)
 		{
 			mkd--;
@@ -328,8 +328,8 @@ vector<pair<string,float> > NewGAParrel::GAsearch(){
 		if(mkd>0&&count<100)
 			continue;
 		time_t now=1000*clock()/ CLOCKS_PER_SEC;
-		//if (count>loomore||((now-start)>EXPIRE&&GANOEX<0))
-			//break;
+		if (count>loomore||((now-start)>EXPIRE&&GANOEX<0))
+			break;
 	}
 	cudaMemcpy(chormes,dev_chormes, Task*pop*sizeof(int), cudaMemcpyDeviceToHost);
 	cudaMemcpy(fit_key,dev_fit_key, sizeof(int)*pop, cudaMemcpyDeviceToHost);

@@ -107,7 +107,7 @@ class NewGA
 					cow =0;
 				}
 				middata.push_back(value);
-				cout<<value<<endl;
+				//cout<<value<<endl;
 				cow++;
 				if(mkd>0&&cow<100)
 					continue;
