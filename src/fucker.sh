@@ -1,9 +1,9 @@
 #!/bin/bash
 rm -f *.txt
-nodes=(1000)
-types=(0)
-graphtype=("ER")
-powers=(6)
+nodes=(50)
+types=(2)
+graphtype=("ER" "NI" "BA")
+powers=(1)
 declare -i edge task biao
 for node in ${nodes[@]}
 do
@@ -15,7 +15,8 @@ do
     do
       task=$[$power*$node]
       biao=$type
-      nvcc -O3  -std=c++11 *.cpp *.cu --gpu-architecture=compute_35 --gpu-code=sm_35 -I ../include -I ../cplex_include -L ../lib -lconcert -lcplex -lilocplex -lm -lpthread -DIL_STD -DCAPACITY=200 -DNODE=$node -DEDge=$edge -DTask=$task -DTYPE="\"${graphtype[0]}\"" -DINPUTFILE=\"$path\" -DGANOEX=1
+      nvcc -std=c++11 *.cpp *.cu --gpu-architecture=compute_35 --gpu-code=sm_35 -I ../include -I ../cplex_include -L ../lib -lconcert -lcplex -lilocplex -lm -lpthread -DIL_STD -DCAPACITY=200 -DNODE=$node -DEDge=$edge -DTask=$task -DTYPE="\"${graphtype[0]}\"" -DINPUTFILE=\"$path\" -DGANOEX=1 
+      ./a.out J
     done
 done
 

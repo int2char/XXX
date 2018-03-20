@@ -53,4 +53,5 @@ graph dependent*/
 	#define ALPHA 500
 	#define Beta 1000
 	#define Gama 3500
+	#define ROD 30
 #endif

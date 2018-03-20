@@ -218,7 +218,7 @@ float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 	float tflow = totalflow;
 	if (tflow<bestadd)
 	{
-		//cout<<"( "<<tflow<<" )"<<endl;
+		cout<<"( "<<tflow<<" )"<<endl;
 		bestadd = tflow;
 		cbbflow = bestadd;
 		bestroutes = Routes;
@@ -235,8 +235,8 @@ float  rearrange(Graph* G, float *capacity, float *lambda, int*pre, float*d, flo
 			}
 		}
 	}
-	//else
-		//cout<<tflow<<endl;
+	else
+		cout<<tflow<<endl;
 	float au=float(1000*clock())/ CLOCKS_PER_SEC;
 	//cout<<"after bfs "<<au-aadd<<endl;
 	stillS = remain.size();

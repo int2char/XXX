@@ -11,4 +11,13 @@ capacity:250
 Lagrange serial searching..............
 in check
 check corrected!!!
-herehere
+herehererun info for GA serial:node:50edge280task:50capacity200
+run info for GA serial:node:50edge280task:50capacity200
+run info for GA serial:node:50edge280task:50capacity200
+run info for GA serial:node:50edge280task:50capacity200
+run info for GA serial:node:50edge280task:50capacity200
+run info for GA serial:node:50edge280task:50capacity200
+run info for GA serial:node:50edge280task:50capacity200
+run info for GA serial:node:50edge280task:50capacity200
+run info for GA serial:node:50edge280task:50capacity200
+run info for GA serial:node:50edge280task:50capacity200

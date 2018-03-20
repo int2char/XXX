@@ -169,7 +169,7 @@ Graph inline ReadFile(int n,int m,vector<service>&ser){
 		return Graph(n,m,st.c_str(),1);
 
 }
-int split(char dst[][10000], char* str, const char* spl)
+int split(char dst[][50000], char* str, const char* spl)
 {
 	int n = 0;
 	char *result = NULL;
@@ -208,7 +208,7 @@ void inline GetPath(Graph& G, taskPath*Path){
 		fgets(line, 99999, data);
 		if (line[0] == '\0')
 			break;
-		char dst[20][10000];
+		char dst[50][50000];
 		int n = split(dst, line, "|");
 		int aci = 0;
 		if (iter >= FROM)
@@ -317,17 +317,17 @@ void inline Pathcheck(Graph &G, vector<service>&ser){
 	string s2=s1+string(ROUTFILE);
 	FILE* data = fopen(s2.c_str(),"r");
 	int tnum = 0;
-	int shit = Task + FROM;
-	char line[100000];
+	int shit = Task;
+	char line[1000000];
 	int iter = 0;
 	while (shit--){
 		fgets(line, 99999, data);
 		if (line[0] == '\0')
 			break;
-		char dst[20][10000];
+		char dst[50][50000];
 		int n = split(dst, line, "|");
 		int aci = 0;
-		if (iter >= FROM)
+		if (iter >= 0)
 		{
 			for (int i = 0; i < n; i++)
 			{
@@ -374,14 +374,14 @@ void inline Pathcheck(Graph &G, vector<service>&ser){
 				remap.clear();
 			}
 			Path[tnum].num = n;
-			//if (n <=0)
-			//cout << "erro fucker" << endl;
+			if (n <30)cout<<n<<" "<< "erro fucker" << endl;
 			tnum++;
 		}
 		iter++;
 	}
 	for(int i=0;i<Task;i++)
-			{if (Path[i].num<10)
+			{
+			if (Path[i].num<30)
 				less++;
 			for(int j=0;j<Path[i].num;j++)
 			{
@@ -419,6 +419,7 @@ void inline GA_Parrel(Graph &G, vector<service>&ser,ofstream&outfile)
 	int edge =G.m;
 	taskPath*Path = new taskPath[Task];
 	GetPath(G,Path);
+	cout<<"asdassdasdsads"<<endl;
 	NewGAParrel Gs(ser,Path,G,outfile);
 	Gs.GAsearch();
 	delete[]Path;
@@ -491,9 +492,14 @@ int main(int args,char*arg[])
 	  	  case 'C':
 	  	  	  {Cplexsolve(G,ser,outfile);break;}
 	  	  case'J':
-	  	  {Pathcheck(G,ser);break;}
+	  	  {
+	  	  	cout<<"checkingasasasdsa "<<endl;
+	  	  	Pathcheck(G,ser);
+	  	  	break;
+	  	  }
 	  	  
 	  }
   }
+  cout<<"what happened"<<endl;
   return 0;
 }

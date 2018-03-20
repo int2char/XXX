@@ -16,6 +16,15 @@ struct FitVMP {
 		mark = _mark;
 	}
 };
+struct FitCmp
+{
+	bool operator()(FitVMP &a, FitVMP &b)
+	{
+		return a.value>b.value;
+	};
+	
+};
+	
 class NewGAParrel
 {
 private:
@@ -91,13 +100,11 @@ public:
 		seed = (unsigned int*)malloc(sizeof(unsigned int));
 		*seed = 119137;
 		muinfo = (int*)malloc(sizeof(int)*Gama * 3);
-		fit_value=(float*)malloc(sizeof(float)*pop);
-		fit_key=(int*)malloc(sizeof(int)*pop);
+		fit_value=(float*)malloc(sizeof(float)*(pop+ALPHA));
+		fit_key=(int*)malloc(sizeof(int)*(pop+ALPHA));
 		rawvalue=(float*)malloc(sizeof(float)*Task*pop);
 		rawmark=(int*)malloc(sizeof(int)*Task*pop);
-
 	    time_t stt =1000*clock()/ CLOCKS_PER_SEC;
-
 		for (int i = 0; i < Task; i++)
 		{
 			st[i] = ser[i].s;
@@ -105,25 +112,25 @@ public:
 			demand[i] = ser[i].d;
 		}
 		int max = 0;
-		hops=(int*)malloc(sizeof(int)*10*Task);
+		hops=(int*)malloc(sizeof(int)*ROD*Task);
 		pathnum = (int*)malloc(sizeof(int)*Task);
 		for (int i = 0; i < Task; i++)
 		{
 			pathnum[i] = 0;
-			for (int j = 0; j < 10; j++)
+			for (int j = 0; j<ROD; j++)
 			{
-				hops[i*10+j]=PathSets[i].Pathset[j].size()-1;
+				hops[i*ROD+j]=PathSets[i].Pathset[j].size()-1;
 				if (PathSets[i].Pathset[j].size()>0)
 					pathnum[i]++;
 				if (PathSets[i].Pathset[j].size()>max)
 					max = PathSets[i].Pathset[j].size();
 			}
 		}
-		pathset = (int*)malloc(sizeof(int)*Task * 10 * max);
+		pathset = (int*)malloc(sizeof(int)*Task*ROD* max);
 		pathd = max;
-		taskd = max * 10;
+		taskd = max*ROD;
 		for (int i = 0; i < Task; i++)
-			for (int j = 0; j < 10; j++)
+			for (int j=0;j<ROD;j++)
 			{
 				for (int k = 0; k < max;k++)
 					if (k < PathSets[i].Pathset[j].size())
@@ -139,7 +146,7 @@ public:
 
 	};
 	~NewGAParrel(){
-		cudafree();
+		/*cudafree();
 		free(st);
 		free(te);
 		free(demand);
@@ -156,16 +163,11 @@ public:
 		free(fit_key);
 		free(fit_value);
 		free(rawvalue);
-		free(rawmark);
+		free(rawmark);*/
 	}
 	vector<pair<string,float> > GAsearch();
 private:
-	bool static FitCmp(FitVMP a, FitVMP b)
-	{
-		if (a.value < b.value)
-			return false;
-		return true;
-	};
+
 	bool static randcmp(pair<float, pair<int, int> >a, pair<float, pair<int, int> >b)
 	{
 		if (a.first>b.first)
@@ -222,21 +224,19 @@ private:
 				}
 				else
 				{
-					int rat = rand() % 10;
-					if (rat < 10)
-						chormes[i*Task + OjO] = -1;
-					else
-						chormes[i*Task + OjO] = rand() % PathSets[i].num;
-
+					chormes[i*Task + OjO] = -1;
 				}
 			}
 			Fits.push_back(FitVMP(flows, i));
 		}
-		sort(Fits.begin(), Fits.end(), FitCmp);
-		for (int i = 0; i < pop; i++)
+		for(int i=0;i<Fits.size();i++)
+			cout<<Fits[i].value<<" "<<Fits[i].mark<<endl;
+		sort(Fits.begin(), Fits.end(), FitCmp());
+		/*for (int i = 0; i < pop; i++)
 			CuFits[i] = Fits[i];
-		cout << Fits[0].value << endl;
+		cout << Fits[0].value << endl;*/
 		Check(chormes+Fits[0].mark*Task);
+		cout<<"out check "<<endl;
 	};
 	void parrelmake();
 	void cudapre();
@@ -251,6 +251,7 @@ private:
 		{
 			int k = 0;
 			if (co[j] >= 0){
+				cout<<co[j]<<endl;
 				dd += demand[j];
 				while (true)
 				{
@@ -267,7 +268,7 @@ private:
 				}
 			}
 		}
-		cout << "check over!!tof: " <<dd<< endl;
+		cout << "check over!!tof: " << endl;
 		
 	}
 	pair<float,int> more(){
@@ -336,5 +337,3 @@ private:
 	}
 };
 #endif
-
-

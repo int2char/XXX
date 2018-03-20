@@ -43,7 +43,7 @@ __global__ void RawChormes(int*chormes,int *pathnum,int*hops,unsigned int*seed,i
 	int choice=Curand(seed,taskid,array)%(pathnum[taskid]+1)-1;
 	int Cid=popid*Task+taskid;
 	chormes[Cid]=choice;
-	rawvalue[Cid]=demand[taskid]/pow(hops[taskid*10+choice],0.5);
+	rawvalue[Cid]=demand[taskid]/pow(hops[taskid*ROD+choice],0.5);
 	rawmark[Cid]=taskid;
 }
 __global__ void Cook(int*chormes,int*pathset,int pathd,float*popmcap,float*demand,int*rawmark){
@@ -55,7 +55,7 @@ __global__ void Cook(int*chormes,int*pathset,int pathd,float*popmcap,float*deman
 		int mi=rawmark[popid*Task+i];
 		int flag=0;
 		int k=chormes[popid*Task + mi];
-		int dim = mi* 10 * pathd + k*pathd;
+		int dim = mi*ROD* pathd + k*pathd;
 		int j=0;
 		int e;
 		while(true){
@@ -101,7 +101,7 @@ __global__ void Fitor(int*hops,float*capacity,int*chormes,float*demand,int *path
 			float deman = demand[i];
 			int j = 0;
 			int e;
-			int dim = i* 10 * pathd + k*pathd;
+			int dim = i*ROD* pathd + k*pathd;
 			while (true){
 				e = pathset[dim + j];
 				if (e < 0)
@@ -120,7 +120,7 @@ __global__ void Fitor(int*hops,float*capacity,int*chormes,float*demand,int *path
 		if (i < Task)
 		{
 			int k = chormes[chonum*Task + i];
-			deman = (k<0) ?(INFHOPS*demand[i]):(hops[i*10+k]*demand[i]);
+			deman = (k<0) ?(INFHOPS*demand[i]):(hops[i*ROD+k]*demand[i]);
 		}
 		f[i] = (f[i]>capacity[i])?(deman+100*Task*INFHOPS):deman;
 
@@ -225,7 +225,7 @@ void NewGAParrel::cudamalloc(){
 			cudaMalloc((void**)(&dev_muinfo), sizeof(int)*Gama*3);
 			cudaMalloc((void**)(&dev_fit_key), sizeof(int)*pop);
 			cudaMalloc((void**)(&dev_fit_value), sizeof(float)*pop);
-			cudaMalloc((void**)(&dev_hops), sizeof(int)*10*Task);
+			cudaMalloc((void**)(&dev_hops), sizeof(int)*ROD*Task);
 			cudaMalloc((void**)(&dev_rawvalue), sizeof(float)*pop*Task);
 			cudaMalloc((void**)(&dev_rawmark), sizeof(int)*pop*Task);
 			cudaMalloc((void**)(&dev_popmcap), sizeof(float)*G.m*pop);
@@ -247,7 +247,7 @@ void NewGAParrel::cudapre(){
 		cudaMemcpy(dev_muinfo,muinfo, sizeof(int)*Gama*3, cudaMemcpyHostToDevice);
 		cudaMemcpy(dev_fit_key,fit_key, sizeof(int)*pop, cudaMemcpyHostToDevice);
 		cudaMemcpy(dev_fit_value,fit_value, sizeof(float)*pop, cudaMemcpyHostToDevice);
-		cudaMemcpy(dev_hops,hops, sizeof(int)*10*Task, cudaMemcpyHostToDevice);
+		cudaMemcpy(dev_hops,hops, sizeof(int)*ROD*Task, cudaMemcpyHostToDevice);
 	}
 void NewGAParrel::cudafree(){
 		cudaFree(dev_chormes);
@@ -298,6 +298,11 @@ vector<pair<string,float> > NewGAParrel::GAsearch(){
 		iter++;
 		seed++;
 		Fitor << <pop,1024 >> >(dev_hops,dev_capacity, dev_chormes, dev_demand, dev_pathset, pathd, dev_fit_key,dev_fit_value);
+		cudaMemcpy(fit_key,dev_fit_key, sizeof(int)*pop, cudaMemcpyDeviceToHost);
+		cudaMemcpy(fit_value,dev_fit_value, sizeof(float)*pop, cudaMemcpyDeviceToHost);
+		/*for(int k=0;k<pop;k++)
+			cout<<fit_value[k]<<" ";
+		cout<<endl;*/
 		thrust::sort_by_key(dev_fv,dev_fv+pop ,dev_fk,thrust::less<float>());
 		cudaMemcpy(fit_value,dev_fit_value, sizeof(float)*pop, cudaMemcpyDeviceToHost);
 		float ans=fit_value[0];
@@ -309,7 +314,8 @@ vector<pair<string,float> > NewGAParrel::GAsearch(){
 		CudaMutation << <blocks_s2, 1024 >> >(dev_muinfo, dev_childs, dev_chormes, dev_pathnum);
 		dim3 blocks_s3(Task / 1024 + 1, Gama + Beta);
 		Reload << <blocks_s3, 1024 >> >(dev_chormes, dev_childs, dev_fit_key);
-		//cout<<ans<<" "<<best<<endl;
+		
+		cout<<ans<<" "<<best<<endl;
 		if (ans<best)
 		{
 			mkd--;
@@ -322,8 +328,8 @@ vector<pair<string,float> > NewGAParrel::GAsearch(){
 		if(mkd>0&&count<100)
 			continue;
 		time_t now=1000*clock()/ CLOCKS_PER_SEC;
-		if (count>loomore||((now-start)>EXPIRE&&GANOEX<0))
-			break;
+		//if (count>loomore||((now-start)>EXPIRE&&GANOEX<0))
+			//break;
 	}
 	cudaMemcpy(chormes,dev_chormes, Task*pop*sizeof(int), cudaMemcpyDeviceToHost);
 	cudaMemcpy(fit_key,dev_fit_key, sizeof(int)*pop, cudaMemcpyDeviceToHost);
@@ -352,5 +358,3 @@ vector<pair<string,float> > NewGAParrel::GAsearch(){
 	writejsondata(DATAFILE,rdata,string("GA_Paralle"));
 	return rdata;
 }
-
-
